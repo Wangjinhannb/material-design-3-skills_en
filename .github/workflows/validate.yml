@@ -1,0 +1,32 @@
+name: validate
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.13' }
+      - uses: actions/setup-node@v4
+        with: { node-version: '22' }
+      - run: pip install -r requirements-dev.txt
+      - run: python tools/token_generator/generate.py
+      - run: python tools/component_generator/generate_component_docs.py
+      - run: python tools/support_matrix/generate.py
+      - run: python tools/source_checker/check_sources.py
+      - run: python tools/validators/validate_repo.py
+      - run: python tools/validators/check_writing_style.py
+      - run: python tools/validators/check_english_only.py
+      - run: python tools/validators/validate_catalog_coverage.py
+      - run: python tools/validators/validate_reference_coverage.py
+      - run: python tools/validators/validate_skill_evals.py
+      - run: python tools/validators/check_generated_determinism.py
+      - run: python -m unittest discover -s tests -p 'test_*.py'
+      - run: node --check examples/reference-app/web/app.js
+      - run: node --check examples/component-catalog/web/app.js
+      - name: Ensure generated files are committed
+        run: git diff --exit-code
