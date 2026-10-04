@@ -1,0 +1,10 @@
+schema_version: 1
+locale: zh-CN
+language: Simplified Chinese
+repository_variant: Chinese edition
+path_policy: All paths and filenames MUST be ASCII English.
+identifier_policy: Token names, component IDs, code identifiers and schema keys MUST remain English.
+sibling_edition:
+  locale: en
+  status: planned
+  sync_policy: Machine-readable metadata/tokens SHOULD remain semantically identical across editions; prose is localized.

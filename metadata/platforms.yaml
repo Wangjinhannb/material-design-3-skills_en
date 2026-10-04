@@ -1,0 +1,105 @@
+schema_version: 1
+platforms:
+- id: web
+  name: Web
+  stack:
+  - HTML
+  - CSS
+  - JavaScript
+  framework_relation: custom-md3
+  repo_state: experimental
+  verification: Node syntax, static validation, accessibility and visual tests
+  official_sources:
+  - material-web
+  - wai-aria-apg
+  - wcag22
+  notes: The default implementation does not require @material/web. Evaluate it component
+    by component because the library is in maintenance mode.
+- id: android
+  name: Android
+  stack:
+  - Kotlin
+  - Jetpack Compose
+  - Compose Material 3
+  framework_relation: official-native
+  repo_state: documented
+  verification: Android build, lint, tests, plus platform-specific checks
+  official_sources:
+  - android-md3-compose
+  - android-md3-releases
+  - android-adaptive
+  - android-accessibility
+  notes: Prefer official Material3 composables and keep usage within the Classic M3
+    baseline.
+- id: harmonyos
+  name: HarmonyOS
+  stack:
+  - ArkTS
+  - ArkUI
+  - DevEco Studio
+  framework_relation: custom-md3
+  repo_state: documented
+  verification: Static project validation; DevEco Studio/HarmonyOS SDK required for
+    runtime validation
+  official_sources:
+  - harmony-doc-center
+  - harmony-arkts
+  notes: ArkUI provides platform UI primitives. The repository applies the M3 visual
+    and component layer.
+- id: ios
+  name: iOS/iPadOS
+  stack:
+  - Swift
+  - SwiftUI
+  framework_relation: custom-md3
+  repo_state: documented
+  verification: Xcode build and tests on macOS
+  official_sources:
+  - apple-swiftui-accessibility
+  - apple-layout
+  notes: SwiftUI provides platform behavior. The repository applies the M3 visual
+    and component layer.
+- id: windows
+  name: Windows
+  stack:
+  - C#
+  - WinUI 3
+  - Windows App SDK
+  - XAML
+  framework_relation: custom-md3
+  repo_state: documented
+  verification: Windows App SDK restore and build; interactive GUI checks need an
+    interactive runner
+  official_sources:
+  - windows-winui3
+  - windows-controls
+  - windows-xaml-styles
+  notes: WinUI 3 defaults to Fluent. ResourceDictionary, styles, and templates provide
+    the M3 visual layer.
+- id: linux-gtk
+  name: Linux GTK
+  stack:
+  - GTK 4
+  - CSS
+  - optional libadwaita
+  framework_relation: custom-md3
+  repo_state: documented
+  verification: GTK build, headless smoke test, and screenshot artifact
+  official_sources:
+  - gtk-accessibility
+  - libadwaita
+  notes: GTK/libadwaita platform behavior may be reused. Adwaita visual styling is
+    replaced by the repository M3 layer.
+- id: linux-qt
+  name: Linux Qt
+  stack:
+  - Qt 6
+  - QML
+  - Qt Quick Controls
+  framework_relation: partial
+  repo_state: documented
+  verification: Qt build, headless smoke test, and screenshot artifact
+  official_sources:
+  - qt-material-style
+  notes: Qt Material Style is a reference only. Components still require token and
+    behavior review against this baseline.

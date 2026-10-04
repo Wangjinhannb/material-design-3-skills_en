@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Classic MD3 Component Catalog",
+  "type": "object",
+  "required": [
+    "baseline",
+    "component_count",
+    "components"
+  ],
+  "properties": {
+    "component_count": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "components": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "name_zh",
+          "category",
+          "purpose",
+          "variants",
+          "states",
+          "required_token_groups",
+          "official_url",
+          "baseline"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9][a-z0-9-]*$"
+          },
+          "variants": {
+            "type": "array",
+            "minItems": 1
+          },
+          "states": {
+            "type": "array",
+            "minItems": 1
+          }
+        }
+      }
+    }
+  }
+}

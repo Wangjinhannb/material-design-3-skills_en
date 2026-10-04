@@ -1,0 +1,846 @@
+{
+  "$description": "Classic M3 reference light scheme for cross-platform examples and generator tests. Products are not required to use this purple palette.",
+  "$extensions": {
+    "org.md3-cross-platform": {
+      "baseline": "classic-md3-2024-en",
+      "provenance": "repo-reference-theme",
+      "format_note": "DTCG 2025.10 color structure"
+    }
+  },
+  "color": {
+    "$type": "color",
+    "primary": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.403922,
+          0.313725,
+          0.643137
+        ],
+        "alpha": 1.0
+      },
+      "$description": "primary",
+      "$extensions": {
+        "org.md3-cross-platform": {
+          "hex": "#6750A4"
+        }
+      }
+    },
+    "onPrimary": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "alpha": 1.0
+      },
+      "$description": "onPrimary",
+      "$extensions": {
+        "org.md3-cross-platform": {
+          "hex": "#FFFFFF"
+        }
+      }
+    },
+    "primaryContainer": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.917647,
+          0.866667,
+          1.0
+        ],
+        "alpha": 1.0
+      },
+      "$description": "primaryContainer",
+      "$extensions": {
+        "org.md3-cross-platform": {
+          "hex": "#EADDFF"
+        }
+      }
+    },
+    "onPrimaryContainer": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.129412,
+          0.0,
+          0.364706
+        ],
+        "alpha": 1.0
+      },
+      "$description": "onPrimaryContainer",
+      "$extensions": {
+        "org.md3-cross-platform": {
+          "hex": "#21005D"
+        }
+      }
+    },
+    "secondary": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.384314,
+          0.356863,
+          0.443137
+        ],
+        "alpha": 1.0
+      },
+      "$description": "secondary",
+      "$extensions": {
+        "org.md3-cross-platform": {
+          "hex": "#625B71"
+        }
+      }
+    },
+    "onSecondary": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "alpha": 1.0
+      },
+      "$description": "onSecondary",
+      "$extensions": {
+        "org.md3-cross-platform": {
+          "hex": "#FFFFFF"
+        }
+      }
+    },
+    "secondaryContainer": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.909804,
+          0.870588,
+          0.972549
+        ],
+        "alpha": 1.0
+      },
+      "$description": "secondaryContainer",
+      "$extensions": {
+        "org.md3-cross-platform": {
+          "hex": "#E8DEF8"
+        }
+      }
+    },
+    "onSecondaryContainer": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.113725,
+          0.098039,
+          0.168627
+        ],
+        "alpha": 1.0
+      },
+      "$description": "onSecondaryContainer",
+      "$extensions": {
+        "org.md3-cross-platform": {
+          "hex": "#1D192B"
+        }
+      }
+    },
+    "tertiary": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.490196,
+          0.321569,
+          0.376471
+        ],
+        "alpha": 1.0
+      },
+      "$description": "tertiary",
+      "$extensions": {
+        "org.md3-cross-platform": {
+          "hex": "#7D5260"
+        }
+      }
+    },
+    "onTertiary": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "alpha": 1.0
+      },
+      "$description": "onTertiary",
+      "$extensions": {
+        "org.md3-cross-platform": {
+          "hex": "#FFFFFF"
+        }
+      }
+    },
+    "tertiaryContainer": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          1.0,
+          0.847059,
+          0.894118
+        ],
+        "alpha": 1.0
+      },
+      "$description": "tertiaryContainer",
+      "$extensions": {
+        "org.md3-cross-platform": {
+          "hex": "#FFD8E4"
+        }
+      }
+    },
+    "onTertiaryContainer": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.192157,
+          0.066667,
+          0.113725
+        ],
+        "alpha": 1.0
+      },
+      "$description": "onTertiaryContainer",
+      "$extensions": {
+        "org.md3-cross-platform": {
+          "hex": "#31111D"
+        }
+      }
+    },
+    "error": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.701961,
+          0.14902,
+          0.117647
+        ],
+        "alpha": 1.0
+      },
+      "$description": "error",
+      "$extensions": {
+        "org.md3-cross-platform": {
+          "hex": "#B3261E"
+        }
+      }
+    },
+    "onError": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "alpha": 1.0
+      },
+      "$description": "onError",
+      "$extensions": {
+        "org.md3-cross-platform": {
+          "hex": "#FFFFFF"
+        }
+      }
+    },
+    "errorContainer": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.976471,
+          0.870588,
+          0.862745
+        ],
+        "alpha": 1.0
+      },
+      "$description": "errorContainer",
+      "$extensions": {
+        "org.md3-cross-platform": {
+          "hex": "#F9DEDC"
+        }
+      }
+    },
+    "onErrorContainer": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.254902,
+          0.054902,
+          0.043137
+        ],
+        "alpha": 1.0
+      },
+      "$description": "onErrorContainer",
+      "$extensions": {
+        "org.md3-cross-platform": {
+          "hex": "#410E0B"
+        }
+      }
+    },
+    "background": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          1.0,
+          0.984314,
+          0.996078
+        ],
+        "alpha": 1.0
+      },
+      "$description": "background",
+      "$extensions": {
+        "org.md3-cross-platform": {
+          "hex": "#FFFBFE"
+        }
+      }
+    },
+    "onBackground": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.113725,
+          0.105882,
+          0.12549
+        ],
+        "alpha": 1.0
+      },
+      "$description": "onBackground",
+      "$extensions": {
+        "org.md3-cross-platform": {
+          "hex": "#1D1B20"
+        }
+      }
+    },
+    "surface": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          1.0,
+          0.984314,
+          0.996078
+        ],
+        "alpha": 1.0
+      },
+      "$description": "surface",
+      "$extensions": {
+        "org.md3-cross-platform": {
+          "hex": "#FFFBFE"
+        }
+      }
+    },
+    "onSurface": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.113725,
+          0.105882,
+          0.12549
+        ],
+        "alpha": 1.0
+      },
+      "$description": "onSurface",
+      "$extensions": {
+        "org.md3-cross-platform": {
+          "hex": "#1D1B20"
+        }
+      }
+    },
+    "surfaceVariant": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.905882,
+          0.878431,
+          0.92549
+        ],
+        "alpha": 1.0
+      },
+      "$description": "surfaceVariant",
+      "$extensions": {
+        "org.md3-cross-platform": {
+          "hex": "#E7E0EC"
+        }
+      }
+    },
+    "onSurfaceVariant": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.286275,
+          0.270588,
+          0.309804
+        ],
+        "alpha": 1.0
+      },
+      "$description": "onSurfaceVariant",
+      "$extensions": {
+        "org.md3-cross-platform": {
+          "hex": "#49454F"
+        }
+      }
+    },
+    "outline": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.47451,
+          0.454902,
+          0.494118
+        ],
+        "alpha": 1.0
+      },
+      "$description": "outline",
+      "$extensions": {
+        "org.md3-cross-platform": {
+          "hex": "#79747E"
+        }
+      }
+    },
+    "outlineVariant": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.792157,
+          0.768627,
+          0.815686
+        ],
+        "alpha": 1.0
+      },
+      "$description": "outlineVariant",
+      "$extensions": {
+        "org.md3-cross-platform": {
+          "hex": "#CAC4D0"
+        }
+      }
+    },
+    "shadow": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "alpha": 1.0
+      },
+      "$description": "shadow",
+      "$extensions": {
+        "org.md3-cross-platform": {
+          "hex": "#000000"
+        }
+      }
+    },
+    "scrim": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "alpha": 1.0
+      },
+      "$description": "scrim",
+      "$extensions": {
+        "org.md3-cross-platform": {
+          "hex": "#000000"
+        }
+      }
+    },
+    "inverseSurface": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.196078,
+          0.184314,
+          0.207843
+        ],
+        "alpha": 1.0
+      },
+      "$description": "inverseSurface",
+      "$extensions": {
+        "org.md3-cross-platform": {
+          "hex": "#322F35"
+        }
+      }
+    },
+    "inverseOnSurface": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.960784,
+          0.937255,
+          0.968627
+        ],
+        "alpha": 1.0
+      },
+      "$description": "inverseOnSurface",
+      "$extensions": {
+        "org.md3-cross-platform": {
+          "hex": "#F5EFF7"
+        }
+      }
+    },
+    "inversePrimary": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.815686,
+          0.737255,
+          1.0
+        ],
+        "alpha": 1.0
+      },
+      "$description": "inversePrimary",
+      "$extensions": {
+        "org.md3-cross-platform": {
+          "hex": "#D0BCFF"
+        }
+      }
+    },
+    "surfaceTint": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.403922,
+          0.313725,
+          0.643137
+        ],
+        "alpha": 1.0
+      },
+      "$description": "surfaceTint",
+      "$extensions": {
+        "org.md3-cross-platform": {
+          "hex": "#6750A4"
+        }
+      }
+    },
+    "surfaceDim": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.870588,
+          0.847059,
+          0.882353
+        ],
+        "alpha": 1.0
+      },
+      "$description": "surfaceDim",
+      "$extensions": {
+        "org.md3-cross-platform": {
+          "hex": "#DED8E1"
+        }
+      }
+    },
+    "surfaceBright": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          1.0,
+          0.984314,
+          0.996078
+        ],
+        "alpha": 1.0
+      },
+      "$description": "surfaceBright",
+      "$extensions": {
+        "org.md3-cross-platform": {
+          "hex": "#FFFBFE"
+        }
+      }
+    },
+    "surfaceContainerLowest": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "alpha": 1.0
+      },
+      "$description": "surfaceContainerLowest",
+      "$extensions": {
+        "org.md3-cross-platform": {
+          "hex": "#FFFFFF"
+        }
+      }
+    },
+    "surfaceContainerLow": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.968627,
+          0.94902,
+          0.980392
+        ],
+        "alpha": 1.0
+      },
+      "$description": "surfaceContainerLow",
+      "$extensions": {
+        "org.md3-cross-platform": {
+          "hex": "#F7F2FA"
+        }
+      }
+    },
+    "surfaceContainer": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.952941,
+          0.929412,
+          0.968627
+        ],
+        "alpha": 1.0
+      },
+      "$description": "surfaceContainer",
+      "$extensions": {
+        "org.md3-cross-platform": {
+          "hex": "#F3EDF7"
+        }
+      }
+    },
+    "surfaceContainerHigh": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.92549,
+          0.901961,
+          0.941176
+        ],
+        "alpha": 1.0
+      },
+      "$description": "surfaceContainerHigh",
+      "$extensions": {
+        "org.md3-cross-platform": {
+          "hex": "#ECE6F0"
+        }
+      }
+    },
+    "surfaceContainerHighest": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.901961,
+          0.878431,
+          0.913725
+        ],
+        "alpha": 1.0
+      },
+      "$description": "surfaceContainerHighest",
+      "$extensions": {
+        "org.md3-cross-platform": {
+          "hex": "#E6E0E9"
+        }
+      }
+    },
+    "primaryFixed": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.917647,
+          0.866667,
+          1.0
+        ],
+        "alpha": 1.0
+      },
+      "$description": "primaryFixed",
+      "$extensions": {
+        "org.md3-cross-platform": {
+          "hex": "#EADDFF"
+        }
+      }
+    },
+    "primaryFixedDim": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.815686,
+          0.737255,
+          1.0
+        ],
+        "alpha": 1.0
+      },
+      "$description": "primaryFixedDim",
+      "$extensions": {
+        "org.md3-cross-platform": {
+          "hex": "#D0BCFF"
+        }
+      }
+    },
+    "onPrimaryFixed": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.129412,
+          0.0,
+          0.364706
+        ],
+        "alpha": 1.0
+      },
+      "$description": "onPrimaryFixed",
+      "$extensions": {
+        "org.md3-cross-platform": {
+          "hex": "#21005D"
+        }
+      }
+    },
+    "onPrimaryFixedVariant": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.309804,
+          0.215686,
+          0.545098
+        ],
+        "alpha": 1.0
+      },
+      "$description": "onPrimaryFixedVariant",
+      "$extensions": {
+        "org.md3-cross-platform": {
+          "hex": "#4F378B"
+        }
+      }
+    },
+    "secondaryFixed": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.909804,
+          0.870588,
+          0.972549
+        ],
+        "alpha": 1.0
+      },
+      "$description": "secondaryFixed",
+      "$extensions": {
+        "org.md3-cross-platform": {
+          "hex": "#E8DEF8"
+        }
+      }
+    },
+    "secondaryFixedDim": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.8,
+          0.760784,
+          0.862745
+        ],
+        "alpha": 1.0
+      },
+      "$description": "secondaryFixedDim",
+      "$extensions": {
+        "org.md3-cross-platform": {
+          "hex": "#CCC2DC"
+        }
+      }
+    },
+    "onSecondaryFixed": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.113725,
+          0.098039,
+          0.168627
+        ],
+        "alpha": 1.0
+      },
+      "$description": "onSecondaryFixed",
+      "$extensions": {
+        "org.md3-cross-platform": {
+          "hex": "#1D192B"
+        }
+      }
+    },
+    "onSecondaryFixedVariant": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.290196,
+          0.266667,
+          0.345098
+        ],
+        "alpha": 1.0
+      },
+      "$description": "onSecondaryFixedVariant",
+      "$extensions": {
+        "org.md3-cross-platform": {
+          "hex": "#4A4458"
+        }
+      }
+    },
+    "tertiaryFixed": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          1.0,
+          0.847059,
+          0.894118
+        ],
+        "alpha": 1.0
+      },
+      "$description": "tertiaryFixed",
+      "$extensions": {
+        "org.md3-cross-platform": {
+          "hex": "#FFD8E4"
+        }
+      }
+    },
+    "tertiaryFixedDim": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.937255,
+          0.721569,
+          0.784314
+        ],
+        "alpha": 1.0
+      },
+      "$description": "tertiaryFixedDim",
+      "$extensions": {
+        "org.md3-cross-platform": {
+          "hex": "#EFB8C8"
+        }
+      }
+    },
+    "onTertiaryFixed": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.192157,
+          0.066667,
+          0.113725
+        ],
+        "alpha": 1.0
+      },
+      "$description": "onTertiaryFixed",
+      "$extensions": {
+        "org.md3-cross-platform": {
+          "hex": "#31111D"
+        }
+      }
+    },
+    "onTertiaryFixedVariant": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.388235,
+          0.231373,
+          0.282353
+        ],
+        "alpha": 1.0
+      },
+      "$description": "onTertiaryFixedVariant",
+      "$extensions": {
+        "org.md3-cross-platform": {
+          "hex": "#633B48"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.21)
+project(md3_qt_catalog LANGUAGES CXX)
+set(CMAKE_CXX_STANDARD 17)
+find_package(Qt6 REQUIRED COMPONENTS Quick QuickControls2)
+qt_standard_project_setup(REQUIRES 6.5)
+qt_add_executable(md3-qt-catalog main.cpp)
+qt_add_qml_module(md3-qt-catalog URI MD3Catalog VERSION 1.0 QML_FILES Main.qml)
+target_link_libraries(md3-qt-catalog PRIVATE Qt6::Quick Qt6::QuickControls2)

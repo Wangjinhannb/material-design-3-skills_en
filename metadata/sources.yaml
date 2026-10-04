@@ -1,0 +1,382 @@
+schema_version: 1
+retrieved_at: '2026-10-03'
+sources:
+- id: md3-home
+  title: Material Design 3
+  organization: Google Material Design
+  url: https://m3.material.io/
+  retrieved_at: '2026-10-03'
+  category: official-md3
+  status: current-site
+  normative_or_informative: normative-design-guidance
+  license_or_usage_notes: Linked and paraphrased only; follow the upstream license
+    and terms.
+  notes: Primary scope reference for Material Design 3.
+- id: md3-color-roles
+  title: Color roles - Material Design 3
+  organization: Google Material Design
+  url: https://m3.material.io/styles/color/roles
+  retrieved_at: '2026-10-03'
+  category: official-md3
+  status: current-site
+  normative_or_informative: normative-design-guidance
+  license_or_usage_notes: Linked and paraphrased only; follow the upstream license
+    and terms.
+  notes: Primary reference for semantic color roles.
+- id: md3-typography
+  title: Typography - Material Design 3
+  organization: Google Material Design
+  url: https://m3.material.io/styles/typography/overview
+  retrieved_at: '2026-10-03'
+  category: official-md3
+  status: current-site
+  normative_or_informative: normative-design-guidance
+  license_or_usage_notes: Linked and paraphrased only; follow the upstream license
+    and terms.
+  notes: Primary reference for the M3 type system.
+- id: md3-elevation
+  title: Elevation - Material Design 3
+  organization: Google Material Design
+  url: https://m3.material.io/styles/elevation/overview
+  retrieved_at: '2026-10-03'
+  category: official-md3
+  status: current-site
+  normative_or_informative: normative-design-guidance
+  license_or_usage_notes: Linked and paraphrased only; follow the upstream license
+    and terms.
+  notes: Primary reference for elevation and tonal hierarchy.
+- id: md3-states
+  title: States - Material Design 3
+  organization: Google Material Design
+  url: https://m3.material.io/foundations/interaction/states
+  retrieved_at: '2026-10-03'
+  category: official-md3
+  status: current-site
+  normative_or_informative: normative-design-guidance
+  license_or_usage_notes: Linked and paraphrased only; follow the upstream license
+    and terms.
+  notes: Primary reference for interaction states and state layers.
+- id: md3-components
+  title: Components - Material Design 3
+  organization: Google Material Design
+  url: https://m3.material.io/components
+  retrieved_at: '2026-10-03'
+  category: official-md3
+  status: current-site
+  normative_or_informative: normative-design-guidance
+  license_or_usage_notes: Linked and paraphrased only; follow the upstream license
+    and terms.
+  notes: Primary component catalog reference.
+- id: android-md3-compose
+  title: Material Design 3 in Compose
+  organization: Google Android Developers
+  url: https://developer.android.com/develop/ui/compose/designsystems/material3
+  retrieved_at: '2026-10-03'
+  category: official-implementation
+  status: current
+  normative_or_informative: implementation-guidance
+  license_or_usage_notes: Linked and paraphrased only; follow the upstream license
+    and terms.
+  notes: Official Android Compose Material 3 implementation guidance.
+- id: android-md3-releases
+  title: Compose Material 3 release notes
+  organization: Google Android Developers
+  url: https://developer.android.com/jetpack/androidx/releases/compose-material3
+  retrieved_at: '2026-10-03'
+  category: official-implementation
+  status: current
+  normative_or_informative: implementation-version-source
+  license_or_usage_notes: Linked and paraphrased only; follow the upstream license
+    and terms.
+  notes: Version and API status reference for Compose Material 3.
+- id: android-md3-colorscheme
+  title: ColorScheme API
+  organization: Google Android Developers
+  url: https://developer.android.com/reference/kotlin/androidx/compose/material3/ColorScheme
+  retrieved_at: '2026-10-03'
+  category: official-implementation
+  status: current
+  normative_or_informative: implementation-reference
+  license_or_usage_notes: Linked and paraphrased only; follow the upstream license
+    and terms.
+  notes: Official ColorScheme API mapping reference.
+- id: android-adaptive
+  title: Get started with adaptive apps
+  organization: Google Android Developers
+  url: https://developer.android.com/develop/adaptive-apps/guides/get-started-with-adaptive-apps
+  retrieved_at: '2026-10-03'
+  category: official-implementation
+  status: current
+  normative_or_informative: implementation-guidance
+  license_or_usage_notes: Linked and paraphrased only; follow the upstream license
+    and terms.
+  notes: Official Android adaptive layout guidance.
+- id: android-accessibility
+  title: Accessibility in Jetpack Compose
+  organization: Google Android Developers
+  url: https://developer.android.com/develop/ui/compose/accessibility
+  retrieved_at: '2026-10-03'
+  category: accessibility
+  status: current
+  normative_or_informative: implementation-guidance
+  license_or_usage_notes: Linked and paraphrased only; follow the upstream license
+    and terms.
+  notes: Compose accessibility implementation guidance.
+- id: material-web
+  title: Material Web repository
+  organization: Google Material Components
+  url: https://github.com/material-components/material-web
+  retrieved_at: '2026-10-03'
+  category: official-implementation
+  status: maintenance-mode
+  normative_or_informative: implementation-reference
+  license_or_usage_notes: Linked and paraphrased only; follow the upstream license
+    and terms.
+  notes: Material Web is retained as a component reference. The repository is in maintenance
+    mode.
+- id: material-symbols
+  title: Material Symbols guide
+  organization: Google Fonts
+  url: https://developers.google.com/fonts/docs/material_symbols
+  retrieved_at: '2026-10-03'
+  category: official-assets
+  status: current
+  normative_or_informative: implementation-guidance
+  license_or_usage_notes: Linked and paraphrased only; follow the upstream license
+    and terms.
+  notes: Official Material Symbols usage reference.
+- id: dtcg-format-2025-10
+  title: Design Tokens Format Module 2025.10
+  organization: Design Tokens Community Group
+  url: https://www.w3.org/community/reports/design-tokens/CG-FINAL-format-20251028/
+  retrieved_at: '2026-10-03'
+  category: token-format
+  status: stable-community-final-report
+  normative_or_informative: token-format-reference
+  license_or_usage_notes: Linked and paraphrased only; follow the upstream license
+    and terms.
+  notes: Stable Community Group Final Report for design-token interchange.
+- id: dtcg-color-2025-10
+  title: Design Tokens Color Module 2025.10
+  organization: Design Tokens Community Group
+  url: https://www.w3.org/community/reports/design-tokens/CG-FINAL-color-20251028/
+  retrieved_at: '2026-10-03'
+  category: token-format
+  status: stable-community-final-report
+  normative_or_informative: token-format-reference
+  license_or_usage_notes: Linked and paraphrased only; follow the upstream license
+    and terms.
+  notes: DTCG color token module reference.
+- id: dtcg-resolver-2025-10
+  title: Design Tokens Resolver Module 2025.10
+  organization: Design Tokens Community Group
+  url: https://www.w3.org/community/reports/design-tokens/CG-FINAL-resolver-20251028/
+  retrieved_at: '2026-10-03'
+  category: token-format
+  status: stable-community-final-report
+  normative_or_informative: token-format-reference
+  license_or_usage_notes: Linked and paraphrased only; follow the upstream license
+    and terms.
+  notes: DTCG resolver module reference. Full resolver support is not claimed by this
+    repository.
+- id: harmony-doc-center
+  title: HarmonyOS documentation center
+  organization: Huawei Developers
+  url: https://developer.huawei.com/consumer/cn/doc/
+  retrieved_at: '2026-10-03'
+  category: official-platform
+  status: current
+  normative_or_informative: implementation-reference
+  license_or_usage_notes: Linked and paraphrased only; follow the upstream license
+    and terms.
+  notes: Primary HarmonyOS documentation entry point.
+- id: harmony-arkts
+  title: ArkTS
+  organization: Huawei Developers
+  url: https://developer.huawei.com/consumer/en/arkts/
+  retrieved_at: '2026-10-03'
+  category: official-platform
+  status: current
+  normative_or_informative: implementation-reference
+  license_or_usage_notes: Linked and paraphrased only; follow the upstream license
+    and terms.
+  notes: Reference for ArkTS language and declarative UI capabilities.
+- id: apple-swiftui-accessibility
+  title: Accessibility fundamentals in SwiftUI
+  organization: Apple Developer
+  url: https://developer.apple.com/documentation/swiftui/accessibility-fundamentals
+  retrieved_at: '2026-10-03'
+  category: official-platform
+  status: current
+  normative_or_informative: implementation-guidance
+  license_or_usage_notes: Linked and paraphrased only; follow the upstream license
+    and terms.
+  notes: Reference for SwiftUI accessibility behavior and modifiers.
+- id: apple-layout
+  title: Layout - Human Interface Guidelines
+  organization: Apple Developer
+  url: https://developer.apple.com/design/human-interface-guidelines/layout
+  retrieved_at: '2026-10-03'
+  category: official-platform
+  status: current
+  normative_or_informative: platform-behavior-guidance
+  license_or_usage_notes: Linked and paraphrased only; follow the upstream license
+    and terms.
+  notes: Reference for safe areas, window changes, text scaling, and RTL behavior.
+- id: windows-winui3
+  title: WinUI 3
+  organization: Microsoft Learn
+  url: https://learn.microsoft.com/windows/apps/winui/
+  retrieved_at: '2026-10-03'
+  category: official-platform
+  status: current
+  normative_or_informative: implementation-reference
+  license_or_usage_notes: Linked and paraphrased only; follow the upstream license
+    and terms.
+  notes: WinUI 3 implementation reference. The default visual language is Fluent;
+    this repository layers M3 styling on top.
+- id: windows-controls
+  title: Controls for Windows apps
+  organization: Microsoft Learn
+  url: https://learn.microsoft.com/windows/apps/design/controls/
+  retrieved_at: '2026-10-03'
+  category: official-platform
+  status: current
+  normative_or_informative: implementation-reference
+  license_or_usage_notes: Linked and paraphrased only; follow the upstream license
+    and terms.
+  notes: WinUI control and input behavior reference.
+- id: windows-xaml-styles
+  title: XAML styles
+  organization: Microsoft Learn
+  url: https://learn.microsoft.com/windows/apps/design/style/xaml-styles
+  retrieved_at: '2026-10-03'
+  category: official-platform
+  status: current
+  normative_or_informative: implementation-reference
+  license_or_usage_notes: Linked and paraphrased only; follow the upstream license
+    and terms.
+  notes: Reference for ResourceDictionary, styles, and control states.
+- id: gtk-accessibility
+  title: GTK 4 Accessibility
+  organization: GTK
+  url: https://docs.gtk.org/gtk4/section-accessibility.html
+  retrieved_at: '2026-10-03'
+  category: official-platform
+  status: current
+  normative_or_informative: implementation-reference
+  license_or_usage_notes: Linked and paraphrased only; follow the upstream license
+    and terms.
+  notes: Reference for GtkAccessible roles, states, properties, and relationships.
+- id: libadwaita
+  title: libadwaita documentation
+  organization: GNOME
+  url: https://gnome.pages.gitlab.gnome.org/libadwaita/doc/
+  retrieved_at: '2026-10-03'
+  category: official-platform
+  status: current
+  normative_or_informative: implementation-reference
+  license_or_usage_notes: Linked and paraphrased only; follow the upstream license
+    and terms.
+  notes: Adwaita is a GNOME design system. This repository may reuse platform capabilities
+    without adopting its visual language.
+- id: qt-material-style
+  title: Qt Quick Controls Material Style
+  organization: Qt
+  url: https://doc.qt.io/qt-6/qtquickcontrols-material.html
+  retrieved_at: '2026-10-03'
+  category: official-platform
+  status: current
+  normative_or_informative: implementation-reference
+  license_or_usage_notes: Linked and paraphrased only; follow the upstream license
+    and terms.
+  notes: Qt Material Style is an implementation reference, not proof of current Classic
+    M3 conformance.
+- id: wai-aria-apg
+  title: ARIA Authoring Practices Guide
+  organization: W3C WAI
+  url: https://www.w3.org/WAI/ARIA/apg/
+  retrieved_at: '2026-10-03'
+  category: accessibility
+  status: current
+  normative_or_informative: informative-practices
+  license_or_usage_notes: Linked and paraphrased only; follow the upstream license
+    and terms.
+  notes: Reference for accessible interaction patterns on the web.
+- id: wcag22
+  title: Web Content Accessibility Guidelines (WCAG) 2.2
+  organization: W3C
+  url: https://www.w3.org/TR/WCAG22/
+  retrieved_at: '2026-10-03'
+  category: accessibility
+  status: recommendation
+  normative_or_informative: normative-web-accessibility
+  license_or_usage_notes: Linked and paraphrased only; follow the upstream license
+    and terms.
+  notes: Accessibility requirements and success criteria reference.
+- id: android-compose-bom
+  title: Use a Bill of Materials
+  organization: Google Android Developers
+  url: https://developer.android.com/develop/ui/compose/bom
+  retrieved_at: '2026-10-03'
+  category: official-implementation
+  status: current
+  normative_or_informative: implementation-version-source
+  license_or_usage_notes: Linked and paraphrased only; follow the upstream license
+    and terms.
+  notes: Android Compose dependency alignment reference.
+- id: android-agp
+  title: About Android Gradle plugin
+  organization: Google Android Developers
+  url: https://developer.android.com/build/releases/about-agp
+  retrieved_at: '2026-10-03'
+  category: official-implementation
+  status: current
+  normative_or_informative: build-tool-reference
+  license_or_usage_notes: Linked and paraphrased only; follow the upstream license
+    and terms.
+  notes: Android Gradle Plugin version reference.
+- id: kotlin-releases
+  title: Kotlin release process
+  organization: JetBrains
+  url: https://kotlinlang.org/docs/releases.html
+  retrieved_at: '2026-10-03'
+  category: official-platform
+  status: current
+  normative_or_informative: build-tool-reference
+  license_or_usage_notes: Linked and paraphrased only; follow the upstream license
+    and terms.
+  notes: Kotlin version and release reference.
+- id: windows-appsdk-1-8
+  title: Windows App SDK 1.8 release notes
+  organization: Microsoft Learn
+  url: https://learn.microsoft.com/windows/apps/windows-app-sdk/release-notes/windows-app-sdk-1-8
+  retrieved_at: '2026-10-03'
+  category: official-platform
+  status: current
+  normative_or_informative: implementation-version-source
+  license_or_usage_notes: Linked and paraphrased only; follow the upstream license
+    and terms.
+  notes: Windows App SDK version reference.
+- id: playwright-releases
+  title: Playwright release notes
+  organization: Microsoft Playwright
+  url: https://playwright.dev/docs/release-notes
+  retrieved_at: '2026-10-03'
+  category: test-tooling
+  status: current
+  normative_or_informative: tool-version-source
+  license_or_usage_notes: Linked and paraphrased only; follow the upstream license
+    and terms.
+  notes: Playwright version reference.
+- id: axe-playwright
+  title: '@axe-core/playwright'
+  organization: Deque Systems
+  url: https://www.npmjs.com/package/@axe-core/playwright
+  retrieved_at: '2026-10-03'
+  category: test-tooling
+  status: current
+  normative_or_informative: tool-version-source
+  license_or_usage_notes: Linked and paraphrased only; follow the upstream license
+    and terms.
+  notes: Automated web accessibility test integration reference.

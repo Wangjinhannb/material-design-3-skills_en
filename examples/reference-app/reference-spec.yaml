@@ -1,0 +1,18 @@
+schema_version: 1
+sections:
+- overview
+- list
+- form
+- settings
+actions:
+- primary-action
+- save-settings
+- toggle-theme
+fields:
+- display-name
+- notifications
+requirements:
+- light-dark-theme
+- adaptive-navigation
+- keyboard-focus
+- screen-reader-labels

@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/schemas/repo-md3-token-v1.json",
+  "title": "Repository MD3 Token Subset",
+  "type": "object",
+  "description": "Minimal repository validation schema for non-color tokens. Color files use the DTCG 2025.10 color-token structure and are checked as a supported subset by the repository validator.",
+  "properties": {
+    "format": {
+      "const": "repo-md3-token-v1"
+    },
+    "baseline": {
+      "type": "string"
+    },
+    "provenance": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "format",
+    "baseline",
+    "provenance"
+  ]
+}

@@ -1,0 +1,88 @@
+schema_version: 1
+cases:
+- id: build-web
+  mode: Build
+  prompt: Build a Material Design 3 settings page with HTML, CSS, and JavaScript.
+  expected_platform: web
+  required_refs:
+  - core.md
+  - components.md
+  - accessibility.md
+  - platform-web.md
+  forbidden:
+  - Material 2
+  - M3 Expressive
+- id: build-arkts
+  mode: Build
+  prompt: Build an M3 music player home screen in ArkTS.
+  expected_platform: harmonyos
+  required_refs:
+  - core.md
+  - components.md
+  - accessibility.md
+  - platform-harmonyos.md
+  forbidden:
+  - ArkUI is official Material 3
+  - M3 Expressive
+- id: build-android
+  mode: Build
+  prompt: Build a login screen with Jetpack Compose Material 3.
+  expected_platform: android
+  required_refs:
+  - core.md
+  - components.md
+  - accessibility.md
+  - platform-android.md
+  forbidden:
+  - androidx.compose.material.MaterialTheme
+- id: build-ios
+  mode: Build
+  prompt: Build a Material Design 3 settings screen in SwiftUI.
+  expected_platform: ios
+  required_refs:
+  - core.md
+  - components.md
+  - accessibility.md
+  - platform-ios.md
+  forbidden:
+  - SwiftUI natively supports Material 3
+- id: build-windows
+  mode: Build
+  prompt: Build an M3 desktop settings page with WinUI 3.
+  expected_platform: windows
+  required_refs:
+  - core.md
+  - components.md
+  - accessibility.md
+  - platform-windows.md
+  forbidden:
+  - WinUI 3 is Material 3
+- id: audit
+  mode: Audit
+  prompt: Audit this existing UI for Material Design 3 compliance.
+  expected_platform: infer
+  required_refs:
+  - core.md
+  - components.md
+  - accessibility.md
+  - audit.md
+  forbidden:
+  - Only give subjective visual feedback
+- id: explain
+  mode: Explain
+  prompt: What is the M3 surfaceContainerHigh role?
+  expected_platform: none
+  required_refs:
+  - core.md
+  - color.md
+  forbidden:
+  - Present a platform implementation as the only official rule
+- id: anti-expressive
+  mode: Audit
+  prompt: Check strict Classic Material Design 3 and flag any M3 Expressive-only rules.
+  expected_platform: infer
+  required_refs:
+  - source-policy.md
+  - audit.md
+  forbidden:
+  - Recommend Expressive-only components

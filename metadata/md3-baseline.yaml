@@ -1,0 +1,40 @@
+schema_version: 1
+project_version: 0.2.0
+baseline_id: classic-md3-2024-en
+display_name: Classic Material Design 3 cross-platform baseline (English)
+design_scope: Material Design 3 (Classic / pre-Expressive semantics)
+historical_cutoff: '2024-12-31'
+implementation_compatibility_checked_at: '2026-10-03'
+policy:
+  include:
+  - Classic Material Design 3 color roles
+  - Material You dynamic color concepts
+  - Classic M3 typography, shape, elevation, states, motion, adaptive guidance
+  - Classic M3 component catalog
+  exclude:
+  - Material 3 Expressive-only components
+  - Expressive-only motion or shape systems
+  - Material 2 and Material 1
+  - Platform visual design systems such as Fluent, Apple HIG visual language, HarmonyOS
+    Design, Adwaita
+  current_api_rule: Current platform APIs may implement Classic M3, but newer Expressive-only
+    capabilities do not expand this baseline.
+  uncertain_rule: Rules that cannot be confirmed as Classic M3 remain unverified and
+    stay out of the normative specification.
+provenance_classes:
+  official-md3: Official Google Material Design 3 design guidance
+  platform-adaptation: Repository rules for mapping Classic M3 to a target platform
+  repo-convention: Engineering conventions added for consistency, generation, testing,
+    and maintenance
+normative_keywords:
+- MUST
+- MUST NOT
+- SHOULD
+- SHOULD NOT
+- MAY
+known_risks:
+- Current m3.material.io content may include Material 3 Expressive guidance
+- Current Android Compose Material3 packages contain both Classic and Expressive APIs
+- Non-Android platforms do not provide an equivalent complete official M3 component
+  library
+- '@material/web is in maintenance mode'

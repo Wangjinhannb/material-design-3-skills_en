@@ -1,0 +1,378 @@
+schema_version: 1
+component_count: 31
+components:
+- id: buttons
+  test_id: component-buttons
+  required_states:
+  - default
+  - hovered
+  - focused
+  - pressed
+  - disabled
+  variants:
+  - elevated
+  - filled
+  - filled-tonal
+  - outlined
+  - text
+  name: Buttons
+- id: floating-action-button
+  test_id: component-floating-action-button
+  required_states:
+  - default
+  - hovered
+  - focused
+  - pressed
+  - disabled
+  variants:
+  - small
+  - regular
+  - large
+  - extended
+  name: Floating action button
+- id: icon-buttons
+  test_id: component-icon-buttons
+  required_states:
+  - default
+  - hovered
+  - focused
+  - pressed
+  - disabled
+  variants:
+  - standard
+  - filled
+  - filled-tonal
+  - outlined
+  - toggle
+  name: Icon buttons
+- id: segmented-buttons
+  test_id: component-segmented-buttons
+  required_states:
+  - default
+  - hovered
+  - focused
+  - pressed
+  - disabled
+  variants:
+  - single-select
+  - multi-select
+  name: Segmented buttons
+- id: badges
+  test_id: component-badges
+  required_states:
+  - default
+  variants:
+  - small
+  - large
+  name: Badges
+- id: progress-indicators
+  test_id: component-progress-indicators
+  required_states:
+  - default
+  variants:
+  - linear-determinate
+  - linear-indeterminate
+  - circular-determinate
+  - circular-indeterminate
+  name: Progress indicators
+- id: snackbars
+  test_id: component-snackbars
+  required_states:
+  - default
+  variants:
+  - single-line
+  - two-line
+  - with-action
+  name: Snackbars
+- id: tooltips
+  test_id: component-tooltips
+  required_states:
+  - hidden
+  - visible
+  variants:
+  - plain
+  - rich
+  name: Tooltips
+- id: bottom-sheets
+  test_id: component-bottom-sheets
+  required_states:
+  - default
+  - hovered
+  - focused
+  - pressed
+  - disabled
+  variants:
+  - standard
+  - modal
+  name: Bottom sheets
+- id: cards
+  test_id: component-cards
+  required_states:
+  - default
+  - hovered
+  - focused
+  - pressed
+  - disabled
+  variants:
+  - elevated
+  - filled
+  - outlined
+  name: Cards
+- id: carousel
+  test_id: component-carousel
+  required_states:
+  - default
+  - hovered
+  - focused
+  - pressed
+  - disabled
+  variants:
+  - multi-browse
+  - uncontained
+  - hero
+  name: Carousel
+- id: dialogs
+  test_id: component-dialogs
+  required_states:
+  - default
+  - hovered
+  - focused
+  - pressed
+  - disabled
+  variants:
+  - basic
+  - fullscreen
+  name: Dialogs
+- id: divider
+  test_id: component-divider
+  required_states:
+  - default
+  variants:
+  - full-width
+  - inset
+  name: Divider
+- id: lists
+  test_id: component-lists
+  required_states:
+  - default
+  - hovered
+  - focused
+  - pressed
+  - disabled
+  variants:
+  - one-line
+  - two-line
+  - three-line
+  name: Lists
+- id: side-sheets
+  test_id: component-side-sheets
+  required_states:
+  - default
+  - hovered
+  - focused
+  - pressed
+  - disabled
+  variants:
+  - standard
+  - modal
+  name: Side sheets
+- id: bottom-app-bar
+  test_id: component-bottom-app-bar
+  required_states:
+  - default
+  - hovered
+  - focused
+  - pressed
+  - disabled
+  variants:
+  - standard
+  name: Bottom app bar
+- id: top-app-bar
+  test_id: component-top-app-bar
+  required_states:
+  - default
+  - hovered
+  - focused
+  - pressed
+  - disabled
+  variants:
+  - center-aligned
+  - small
+  - medium
+  - large
+  name: Top app bar
+- id: navigation-bar
+  test_id: component-navigation-bar
+  required_states:
+  - default
+  - hovered
+  - focused
+  - pressed
+  - disabled
+  variants:
+  - standard
+  name: Navigation bar
+- id: navigation-drawer
+  test_id: component-navigation-drawer
+  required_states:
+  - default
+  - hovered
+  - focused
+  - pressed
+  - disabled
+  variants:
+  - standard
+  - modal
+  name: Navigation drawer
+- id: navigation-rail
+  test_id: component-navigation-rail
+  required_states:
+  - default
+  - hovered
+  - focused
+  - pressed
+  - disabled
+  variants:
+  - standard
+  name: Navigation rail
+- id: search
+  test_id: component-search
+  required_states:
+  - default
+  - hovered
+  - focused
+  - pressed
+  - disabled
+  variants:
+  - bar
+  - view
+  name: Search
+- id: tabs
+  test_id: component-tabs
+  required_states:
+  - default
+  - hovered
+  - focused
+  - pressed
+  - disabled
+  variants:
+  - primary
+  - secondary
+  name: Tabs
+- id: checkbox
+  test_id: component-checkbox
+  required_states:
+  - unchecked
+  - checked
+  - indeterminate
+  - hovered
+  - focused
+  - pressed
+  - disabled
+  variants:
+  - unchecked
+  - checked
+  - indeterminate
+  name: Checkbox
+- id: chips
+  test_id: component-chips
+  required_states:
+  - default
+  - hovered
+  - focused
+  - pressed
+  - disabled
+  variants:
+  - assist
+  - filter
+  - input
+  - suggestion
+  name: Chips
+- id: date-pickers
+  test_id: component-date-pickers
+  required_states:
+  - default
+  - hovered
+  - focused
+  - pressed
+  - disabled
+  variants:
+  - docked
+  - modal
+  - range
+  name: Date pickers
+- id: menus
+  test_id: component-menus
+  required_states:
+  - default
+  - hovered
+  - focused
+  - pressed
+  - disabled
+  variants:
+  - dropdown
+  - contextual
+  name: Menus
+- id: radio-button
+  test_id: component-radio-button
+  required_states:
+  - unselected
+  - selected
+  - hovered
+  - focused
+  - pressed
+  - disabled
+  variants:
+  - unselected
+  - selected
+  name: Radio button
+- id: sliders
+  test_id: component-sliders
+  required_states:
+  - default
+  - hovered
+  - focused
+  - pressed
+  - disabled
+  variants:
+  - continuous
+  - discrete
+  - range
+  name: Sliders
+- id: switch
+  test_id: component-switch
+  required_states:
+  - 'off'
+  - 'on'
+  - hovered
+  - focused
+  - pressed
+  - disabled
+  variants:
+  - 'off'
+  - 'on'
+  name: Switch
+- id: time-pickers
+  test_id: component-time-pickers
+  required_states:
+  - default
+  - hovered
+  - focused
+  - pressed
+  - disabled
+  variants:
+  - dial
+  - input
+  name: Time pickers
+- id: text-fields
+  test_id: component-text-fields
+  required_states:
+  - empty
+  - focused
+  - populated
+  - error
+  - disabled
+  variants:
+  - filled
+  - outlined
+  name: Text fields

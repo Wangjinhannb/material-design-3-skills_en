@@ -1,0 +1,16 @@
+{
+  "name": "md3-component-catalog-web",
+  "private": true,
+  "version": "0.2.0",
+  "type": "module",
+  "scripts": {
+    "test": "playwright test",
+    "test:visual": "playwright test tests/visual.spec.js",
+    "test:a11y": "playwright test tests/accessibility.spec.js",
+    "update:visual": "playwright test tests/visual.spec.js --update-snapshots"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.63.0",
+    "@axe-core/playwright": "4.13.0"
+  }
+}

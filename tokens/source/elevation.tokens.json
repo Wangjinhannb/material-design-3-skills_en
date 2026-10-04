@@ -1,0 +1,15 @@
+{
+  "format": "repo-md3-token-v1",
+  "provenance": "official-md3",
+  "baseline": "classic-md3-2024-en",
+  "levels": {
+    "level0": 0,
+    "level1": 1,
+    "level2": 3,
+    "level3": 6,
+    "level4": 8,
+    "level5": 12
+  },
+  "unit": "logical-dp",
+  "note": "M3 uses tonal elevation as well as shadow; shadow is not the only way to communicate hierarchy."
+}

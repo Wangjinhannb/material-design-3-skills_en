@@ -1,0 +1,16 @@
+{
+  "format": "repo-md3-token-v1",
+  "provenance": "official-md3",
+  "baseline": "classic-md3-2024-en",
+  "stateLayerOpacity": {
+    "hovered": 0.08,
+    "focused": 0.12,
+    "pressed": 0.12,
+    "dragged": 0.16
+  },
+  "disabled": {
+    "contentOpacity": 0.38,
+    "containerOpacity": 0.12
+  },
+  "note": "Component state colors follow component token rules; do not apply one identical overlay mechanically to every element."
+}

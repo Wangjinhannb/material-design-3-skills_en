@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Platform Catalog",
+  "type": "object",
+  "required": [
+    "platforms"
+  ],
+  "properties": {
+    "platforms": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "stack",
+          "framework_relation",
+          "repo_state",
+          "verification",
+          "official_sources",
+          "notes"
+        ]
+      }
+    }
+  }
+}

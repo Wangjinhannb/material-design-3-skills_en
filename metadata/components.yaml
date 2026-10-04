@@ -1,0 +1,708 @@
+schema_version: 1
+baseline: classic-md3-2024-en
+component_count: 31
+components:
+- id: buttons
+  category: actions
+  purpose: Trigger a clear action.
+  variants:
+  - elevated
+  - filled
+  - filled-tonal
+  - outlined
+  - text
+  states:
+  - default
+  - hovered
+  - focused
+  - pressed
+  - disabled
+  required_token_groups:
+  - color
+  - typography
+  - shape
+  - state
+  adaptive: ''
+  accessibility: Accessible names must describe the action. State must not rely on
+    color alone.
+  official_url: https://m3.material.io/components/buttons/overview
+  baseline: classic-md3-2024-en
+  name: Buttons
+- id: floating-action-button
+  category: actions
+  purpose: Emphasize a high-priority action for the current screen.
+  variants:
+  - small
+  - regular
+  - large
+  - extended
+  states:
+  - default
+  - hovered
+  - focused
+  - pressed
+  - disabled
+  required_token_groups:
+  - color
+  - typography
+  - shape
+  - state
+  adaptive: Use a FAB only for a high-priority action. Reposition it when wider layouts
+    change the information architecture.
+  accessibility: Icon-only FABs require an accessible name.
+  official_url: https://m3.material.io/components/floating-action-button/overview
+  baseline: classic-md3-2024-en
+  name: Floating action button
+- id: icon-buttons
+  category: actions
+  purpose: Expose common actions in a compact icon control.
+  variants:
+  - standard
+  - filled
+  - filled-tonal
+  - outlined
+  - toggle
+  states:
+  - default
+  - hovered
+  - focused
+  - pressed
+  - disabled
+  required_token_groups:
+  - color
+  - typography
+  - shape
+  - state
+  adaptive: ''
+  accessibility: Icon buttons require an accessible name and an adequate target size.
+  official_url: https://m3.material.io/components/icon-buttons/overview
+  baseline: classic-md3-2024-en
+  name: Icon buttons
+- id: segmented-buttons
+  category: actions
+  purpose: Switch between a small set of mutually exclusive or multi-select options.
+  variants:
+  - single-select
+  - multi-select
+  states:
+  - default
+  - hovered
+  - focused
+  - pressed
+  - disabled
+  required_token_groups:
+  - color
+  - typography
+  - shape
+  - state
+  adaptive: ''
+  accessibility: Expose the group relationship and selected state.
+  official_url: https://m3.material.io/components/segmented-buttons/overview
+  baseline: classic-md3-2024-en
+  name: Segmented buttons
+- id: badges
+  category: communication
+  purpose: Communicate a count or status near an icon or navigation destination.
+  variants:
+  - small
+  - large
+  states:
+  - default
+  required_token_groups:
+  - color
+  - typography
+  - shape
+  - state
+  adaptive: ''
+  accessibility: Expose the badge count or status to assistive technology.
+  official_url: https://m3.material.io/components/badges/overview
+  baseline: classic-md3-2024-en
+  name: Badges
+- id: progress-indicators
+  category: communication
+  purpose: Communicate loading or task progress.
+  variants:
+  - linear-determinate
+  - linear-indeterminate
+  - circular-determinate
+  - circular-indeterminate
+  states:
+  - default
+  required_token_groups:
+  - color
+  - typography
+  - shape
+  - state
+  adaptive: ''
+  accessibility: Determinate progress exposes the current value. Indeterminate progress
+    exposes an appropriate loading state.
+  official_url: https://m3.material.io/components/progress-indicators/overview
+  baseline: classic-md3-2024-en
+  name: Progress indicators
+- id: snackbars
+  category: communication
+  purpose: Provide brief feedback and, when useful, one related action.
+  variants:
+  - single-line
+  - two-line
+  - with-action
+  states:
+  - default
+  required_token_groups:
+  - color
+  - typography
+  - shape
+  - state
+  adaptive: ''
+  accessibility: Do not move focus when a snackbar appears. Persistent errors need
+    a persistent accessible message.
+  official_url: https://m3.material.io/components/snackbars/overview
+  baseline: classic-md3-2024-en
+  name: Snackbars
+- id: tooltips
+  category: communication
+  purpose: Explain unfamiliar controls or provide supplemental information.
+  variants:
+  - plain
+  - rich
+  states:
+  - hidden
+  - visible
+  required_token_groups:
+  - color
+  - typography
+  - shape
+  - state
+  adaptive: ''
+  accessibility: Task-critical information must also be available without hover and
+    from keyboard focus.
+  official_url: https://m3.material.io/components/tooltips/overview
+  baseline: classic-md3-2024-en
+  name: Tooltips
+- id: bottom-sheets
+  category: containment
+  purpose: Present supporting content or tasks from the bottom edge.
+  variants:
+  - standard
+  - modal
+  states:
+  - default
+  - hovered
+  - focused
+  - pressed
+  - disabled
+  required_token_groups:
+  - color
+  - typography
+  - shape
+  - state
+  adaptive: ''
+  accessibility: Modal sheets manage focus and prevent background interaction while
+    open.
+  official_url: https://m3.material.io/components/bottom-sheets/overview
+  baseline: classic-md3-2024-en
+  name: Bottom sheets
+- id: cards
+  category: containment
+  purpose: Group related content and actions in one container.
+  variants:
+  - elevated
+  - filled
+  - outlined
+  states:
+  - default
+  - hovered
+  - focused
+  - pressed
+  - disabled
+  required_token_groups:
+  - color
+  - typography
+  - shape
+  - state
+  adaptive: ''
+  accessibility: Treat the whole card as one interactive target only when the entire
+    card performs one action.
+  official_url: https://m3.material.io/components/cards/overview
+  baseline: classic-md3-2024-en
+  name: Cards
+- id: carousel
+  category: containment
+  purpose: Browse a related set of items horizontally in limited space.
+  variants:
+  - multi-browse
+  - uncontained
+  - hero
+  states:
+  - default
+  - hovered
+  - focused
+  - pressed
+  - disabled
+  required_token_groups:
+  - color
+  - typography
+  - shape
+  - state
+  adaptive: ''
+  accessibility: Provide predictable keyboard and assistive-technology navigation.
+    Auto-rotation must be stoppable or disabled.
+  official_url: https://m3.material.io/components/carousel/overview
+  baseline: classic-md3-2024-en
+  name: Carousel
+- id: dialogs
+  category: containment
+  purpose: Request confirmation, selection, or completion of a short task.
+  variants:
+  - basic
+  - fullscreen
+  states:
+  - default
+  - hovered
+  - focused
+  - pressed
+  - disabled
+  required_token_groups:
+  - color
+  - typography
+  - shape
+  - state
+  adaptive: ''
+  accessibility: Move focus into the dialog when opened, restore it sensibly on close,
+    and provide an accessible name or title.
+  official_url: https://m3.material.io/components/dialogs/overview
+  baseline: classic-md3-2024-en
+  name: Dialogs
+- id: divider
+  category: containment
+  purpose: Separate content without introducing a strong container.
+  variants:
+  - full-width
+  - inset
+  states:
+  - default
+  required_token_groups:
+  - color
+  - typography
+  - shape
+  - state
+  adaptive: ''
+  accessibility: Purely visual dividers should not create unnecessary accessibility
+    nodes.
+  official_url: https://m3.material.io/components/divider/overview
+  baseline: classic-md3-2024-en
+  name: Divider
+- id: lists
+  category: containment
+  purpose: Arrange related information, selections, or actions vertically.
+  variants:
+  - one-line
+  - two-line
+  - three-line
+  states:
+  - default
+  - hovered
+  - focused
+  - pressed
+  - disabled
+  required_token_groups:
+  - color
+  - typography
+  - shape
+  - state
+  adaptive: On wider layouts, lists may be paired with a detail pane.
+  accessibility: Keep item semantics, reading order, and interactive areas clear.
+  official_url: https://m3.material.io/components/lists/overview
+  baseline: classic-md3-2024-en
+  name: Lists
+- id: side-sheets
+  category: containment
+  purpose: Present supporting content from the side of a wider window.
+  variants:
+  - standard
+  - modal
+  states:
+  - default
+  - hovered
+  - focused
+  - pressed
+  - disabled
+  required_token_groups:
+  - color
+  - typography
+  - shape
+  - state
+  adaptive: Use on layouts with enough width. Prefer another layout on compact windows.
+  accessibility: Modal side sheets require focus containment and a clear close mechanism.
+  official_url: https://m3.material.io/components/side-sheets/overview
+  baseline: classic-md3-2024-en
+  name: Side sheets
+- id: bottom-app-bar
+  category: navigation
+  purpose: Place primary actions at the bottom of a mobile layout, optionally alongside
+    a FAB.
+  variants:
+  - standard
+  states:
+  - default
+  - hovered
+  - focused
+  - pressed
+  - disabled
+  required_token_groups:
+  - color
+  - typography
+  - shape
+  - state
+  adaptive: ''
+  accessibility: Every action requires a clear name. Avoid system gesture areas.
+  official_url: https://m3.material.io/components/bottom-app-bar/overview
+  baseline: classic-md3-2024-en
+  name: Bottom app bar
+- id: top-app-bar
+  category: navigation
+  purpose: Provide the page title, navigation, and primary actions.
+  variants:
+  - center-aligned
+  - small
+  - medium
+  - large
+  states:
+  - default
+  - hovered
+  - focused
+  - pressed
+  - disabled
+  required_token_groups:
+  - color
+  - typography
+  - shape
+  - state
+  adaptive: Do not stretch a mobile app bar mechanically across wide windows.
+  accessibility: Heading structure and action order should match the visual order.
+  official_url: https://m3.material.io/components/top-app-bar/overview
+  baseline: classic-md3-2024-en
+  name: Top app bar
+- id: navigation-bar
+  category: navigation
+  purpose: Switch between a small set of top-level destinations on compact windows.
+  variants:
+  - standard
+  states:
+  - default
+  - hovered
+  - focused
+  - pressed
+  - disabled
+  required_token_groups:
+  - color
+  - typography
+  - shape
+  - state
+  adaptive: Evaluate a navigation rail or drawer on medium and expanded windows.
+  accessibility: Expose the current destination as selected.
+  official_url: https://m3.material.io/components/navigation-bar/overview
+  baseline: classic-md3-2024-en
+  name: Navigation bar
+- id: navigation-drawer
+  category: navigation
+  purpose: Show top-level destinations and navigation groups.
+  variants:
+  - standard
+  - modal
+  states:
+  - default
+  - hovered
+  - focused
+  - pressed
+  - disabled
+  required_token_groups:
+  - color
+  - typography
+  - shape
+  - state
+  adaptive: A drawer may remain visible on expanded layouts and become modal on compact
+    layouts.
+  accessibility: Modal drawers manage focus and provide a close path.
+  official_url: https://m3.material.io/components/navigation-drawer/overview
+  baseline: classic-md3-2024-en
+  name: Navigation drawer
+- id: navigation-rail
+  category: navigation
+  purpose: Show primary destinations along the side of medium or wide layouts.
+  variants:
+  - standard
+  states:
+  - default
+  - hovered
+  - focused
+  - pressed
+  - disabled
+  required_token_groups:
+  - color
+  - typography
+  - shape
+  - state
+  adaptive: Common on medium and expanded windows.
+  accessibility: Expose selected destinations and preserve predictable keyboard order.
+  official_url: https://m3.material.io/components/navigation-rail/overview
+  baseline: classic-md3-2024-en
+  name: Navigation rail
+- id: search
+  category: navigation
+  purpose: Start a search, accept input, and present results.
+  variants:
+  - bar
+  - view
+  states:
+  - default
+  - hovered
+  - focused
+  - pressed
+  - disabled
+  required_token_groups:
+  - color
+  - typography
+  - shape
+  - state
+  adaptive: ''
+  accessibility: The input requires an accessible name. Announce meaningful result
+    updates when appropriate.
+  official_url: https://m3.material.io/components/search/overview
+  baseline: classic-md3-2024-en
+  name: Search
+- id: tabs
+  category: navigation
+  purpose: Switch between related views at the same hierarchy level.
+  variants:
+  - primary
+  - secondary
+  states:
+  - default
+  - hovered
+  - focused
+  - pressed
+  - disabled
+  required_token_groups:
+  - color
+  - typography
+  - shape
+  - state
+  adaptive: ''
+  accessibility: Use equivalent tablist, tab, and tabpanel semantics and keyboard
+    behavior on the target platform.
+  official_url: https://m3.material.io/components/tabs/overview
+  baseline: classic-md3-2024-en
+  name: Tabs
+- id: checkbox
+  category: selection
+  purpose: Toggle independent choices within a form or group.
+  variants:
+  - unchecked
+  - checked
+  - indeterminate
+  states:
+  - unchecked
+  - checked
+  - indeterminate
+  - hovered
+  - focused
+  - pressed
+  - disabled
+  required_token_groups:
+  - color
+  - typography
+  - shape
+  - state
+  adaptive: ''
+  accessibility: Expose checked and indeterminate states.
+  official_url: https://m3.material.io/components/checkbox/overview
+  baseline: classic-md3-2024-en
+  name: Checkbox
+- id: chips
+  category: selection
+  purpose: Represent filters, input values, suggestions, or assistive actions.
+  variants:
+  - assist
+  - filter
+  - input
+  - suggestion
+  states:
+  - default
+  - hovered
+  - focused
+  - pressed
+  - disabled
+  required_token_groups:
+  - color
+  - typography
+  - shape
+  - state
+  adaptive: ''
+  accessibility: Match semantic roles to the behavior of each chip type.
+  official_url: https://m3.material.io/components/chips/overview
+  baseline: classic-md3-2024-en
+  name: Chips
+- id: date-pickers
+  category: selection
+  purpose: Select a date or date range.
+  variants:
+  - docked
+  - modal
+  - range
+  states:
+  - default
+  - hovered
+  - focused
+  - pressed
+  - disabled
+  required_token_groups:
+  - color
+  - typography
+  - shape
+  - state
+  adaptive: ''
+  accessibility: Date cells need full date names, selected state, and keyboard navigation.
+  official_url: https://m3.material.io/components/date-pickers/overview
+  baseline: classic-md3-2024-en
+  name: Date pickers
+- id: menus
+  category: selection
+  purpose: Present a temporary set of actions or options.
+  variants:
+  - dropdown
+  - contextual
+  states:
+  - default
+  - hovered
+  - focused
+  - pressed
+  - disabled
+  required_token_groups:
+  - color
+  - typography
+  - shape
+  - state
+  adaptive: ''
+  accessibility: Use platform menu semantics and handle arrow keys, Escape, and focus
+    return correctly.
+  official_url: https://m3.material.io/components/menus/overview
+  baseline: classic-md3-2024-en
+  name: Menus
+- id: radio-button
+  category: selection
+  purpose: Select one option from a mutually exclusive group.
+  variants:
+  - unselected
+  - selected
+  states:
+  - unselected
+  - selected
+  - hovered
+  - focused
+  - pressed
+  - disabled
+  required_token_groups:
+  - color
+  - typography
+  - shape
+  - state
+  adaptive: ''
+  accessibility: Expose the group relationship and radio selection state.
+  official_url: https://m3.material.io/components/radio-button/overview
+  baseline: classic-md3-2024-en
+  name: Radio button
+- id: sliders
+  category: selection
+  purpose: Select a value from a continuous or discrete range.
+  variants:
+  - continuous
+  - discrete
+  - range
+  states:
+  - default
+  - hovered
+  - focused
+  - pressed
+  - disabled
+  required_token_groups:
+  - color
+  - typography
+  - shape
+  - state
+  adaptive: ''
+  accessibility: Expose minimum, maximum, current value, and keyboard or assistive-technology
+    adjustment.
+  official_url: https://m3.material.io/components/sliders/overview
+  baseline: classic-md3-2024-en
+  name: Sliders
+- id: switch
+  category: selection
+  purpose: Toggle a binary setting immediately.
+  variants:
+  - 'off'
+  - 'on'
+  states:
+  - 'off'
+  - 'on'
+  - hovered
+  - focused
+  - pressed
+  - disabled
+  required_token_groups:
+  - color
+  - typography
+  - shape
+  - state
+  adaptive: ''
+  accessibility: The label names the setting being changed and exposes the on/off
+    state.
+  official_url: https://m3.material.io/components/switch/overview
+  baseline: classic-md3-2024-en
+  name: Switch
+- id: time-pickers
+  category: selection
+  purpose: Enter or select a time.
+  variants:
+  - dial
+  - input
+  states:
+  - default
+  - hovered
+  - focused
+  - pressed
+  - disabled
+  required_token_groups:
+  - color
+  - typography
+  - shape
+  - state
+  adaptive: ''
+  accessibility: Every time field or dial value needs a clear accessible name and
+    current value.
+  official_url: https://m3.material.io/components/time-pickers/overview
+  baseline: classic-md3-2024-en
+  name: Time pickers
+- id: text-fields
+  category: text-input
+  purpose: Enter or edit text.
+  variants:
+  - filled
+  - outlined
+  states:
+  - empty
+  - focused
+  - populated
+  - error
+  - disabled
+  required_token_groups:
+  - color
+  - typography
+  - shape
+  - state
+  adaptive: ''
+  accessibility: Provide a persistent accessible name. Associate errors with the field
+    and do not rely on color alone.
+  official_url: https://m3.material.io/components/text-fields/overview
+  baseline: classic-md3-2024-en
+  name: Text fields

@@ -1,0 +1,913 @@
+schema_version: 1
+status_definitions:
+  official-native: The target framework provides an official Material 3 implementation.
+    Confirm that the API or behavior belongs to the Classic baseline.
+  native-mapped: Reuse a native control and map it to M3 through theme or style resources.
+  custom-md3: The target framework does not provide a complete M3 implementation;
+    the repository supplies the visual and interaction layer.
+  partial: The framework offers Material styling or partial support, but full baseline
+    compliance is not assumed.
+  experimental: The repository has an implementation or example that has not reached
+    stable release quality.
+  documented: The repository has an implementation strategy and mapping documentation;
+    runtime verification is incomplete.
+components:
+  buttons:
+    web:
+      framework_relation: custom-md3
+      repo_status: experimental
+      runtime_verified: false
+    android:
+      framework_relation: official-native
+      repo_status: documented
+      runtime_verified: false
+    harmonyos:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    ios:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    windows:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    linux-gtk:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    linux-qt:
+      framework_relation: partial
+      repo_status: documented
+      runtime_verified: false
+  floating-action-button:
+    web:
+      framework_relation: custom-md3
+      repo_status: experimental
+      runtime_verified: false
+    android:
+      framework_relation: official-native
+      repo_status: documented
+      runtime_verified: false
+    harmonyos:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    ios:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    windows:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    linux-gtk:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    linux-qt:
+      framework_relation: partial
+      repo_status: documented
+      runtime_verified: false
+  icon-buttons:
+    web:
+      framework_relation: custom-md3
+      repo_status: experimental
+      runtime_verified: false
+    android:
+      framework_relation: official-native
+      repo_status: documented
+      runtime_verified: false
+    harmonyos:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    ios:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    windows:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    linux-gtk:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    linux-qt:
+      framework_relation: partial
+      repo_status: documented
+      runtime_verified: false
+  segmented-buttons:
+    web:
+      framework_relation: custom-md3
+      repo_status: experimental
+      runtime_verified: false
+    android:
+      framework_relation: official-native
+      repo_status: documented
+      runtime_verified: false
+    harmonyos:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    ios:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    windows:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    linux-gtk:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    linux-qt:
+      framework_relation: partial
+      repo_status: documented
+      runtime_verified: false
+  badges:
+    web:
+      framework_relation: custom-md3
+      repo_status: experimental
+      runtime_verified: false
+    android:
+      framework_relation: official-native
+      repo_status: documented
+      runtime_verified: false
+    harmonyos:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    ios:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    windows:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    linux-gtk:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    linux-qt:
+      framework_relation: partial
+      repo_status: documented
+      runtime_verified: false
+  progress-indicators:
+    web:
+      framework_relation: custom-md3
+      repo_status: experimental
+      runtime_verified: false
+    android:
+      framework_relation: official-native
+      repo_status: documented
+      runtime_verified: false
+    harmonyos:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    ios:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    windows:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    linux-gtk:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    linux-qt:
+      framework_relation: partial
+      repo_status: documented
+      runtime_verified: false
+  snackbars:
+    web:
+      framework_relation: custom-md3
+      repo_status: experimental
+      runtime_verified: false
+    android:
+      framework_relation: official-native
+      repo_status: documented
+      runtime_verified: false
+    harmonyos:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    ios:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    windows:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    linux-gtk:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    linux-qt:
+      framework_relation: partial
+      repo_status: documented
+      runtime_verified: false
+  tooltips:
+    web:
+      framework_relation: custom-md3
+      repo_status: experimental
+      runtime_verified: false
+    android:
+      framework_relation: official-native
+      repo_status: documented
+      runtime_verified: false
+    harmonyos:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    ios:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    windows:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    linux-gtk:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    linux-qt:
+      framework_relation: partial
+      repo_status: documented
+      runtime_verified: false
+  bottom-sheets:
+    web:
+      framework_relation: custom-md3
+      repo_status: experimental
+      runtime_verified: false
+    android:
+      framework_relation: official-native
+      repo_status: documented
+      runtime_verified: false
+    harmonyos:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    ios:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    windows:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    linux-gtk:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    linux-qt:
+      framework_relation: partial
+      repo_status: documented
+      runtime_verified: false
+  cards:
+    web:
+      framework_relation: custom-md3
+      repo_status: experimental
+      runtime_verified: false
+    android:
+      framework_relation: official-native
+      repo_status: documented
+      runtime_verified: false
+    harmonyos:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    ios:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    windows:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    linux-gtk:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    linux-qt:
+      framework_relation: partial
+      repo_status: documented
+      runtime_verified: false
+  carousel:
+    web:
+      framework_relation: custom-md3
+      repo_status: experimental
+      runtime_verified: false
+    android:
+      framework_relation: official-native
+      repo_status: documented
+      runtime_verified: false
+    harmonyos:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    ios:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    windows:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    linux-gtk:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    linux-qt:
+      framework_relation: partial
+      repo_status: documented
+      runtime_verified: false
+  dialogs:
+    web:
+      framework_relation: custom-md3
+      repo_status: experimental
+      runtime_verified: false
+    android:
+      framework_relation: official-native
+      repo_status: documented
+      runtime_verified: false
+    harmonyos:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    ios:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    windows:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    linux-gtk:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    linux-qt:
+      framework_relation: partial
+      repo_status: documented
+      runtime_verified: false
+  divider:
+    web:
+      framework_relation: custom-md3
+      repo_status: experimental
+      runtime_verified: false
+    android:
+      framework_relation: official-native
+      repo_status: documented
+      runtime_verified: false
+    harmonyos:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    ios:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    windows:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    linux-gtk:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    linux-qt:
+      framework_relation: partial
+      repo_status: documented
+      runtime_verified: false
+  lists:
+    web:
+      framework_relation: custom-md3
+      repo_status: experimental
+      runtime_verified: false
+    android:
+      framework_relation: official-native
+      repo_status: documented
+      runtime_verified: false
+    harmonyos:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    ios:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    windows:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    linux-gtk:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    linux-qt:
+      framework_relation: partial
+      repo_status: documented
+      runtime_verified: false
+  side-sheets:
+    web:
+      framework_relation: custom-md3
+      repo_status: experimental
+      runtime_verified: false
+    android:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    harmonyos:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    ios:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    windows:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    linux-gtk:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    linux-qt:
+      framework_relation: partial
+      repo_status: documented
+      runtime_verified: false
+  bottom-app-bar:
+    web:
+      framework_relation: custom-md3
+      repo_status: experimental
+      runtime_verified: false
+    android:
+      framework_relation: official-native
+      repo_status: documented
+      runtime_verified: false
+    harmonyos:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    ios:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    windows:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    linux-gtk:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    linux-qt:
+      framework_relation: partial
+      repo_status: documented
+      runtime_verified: false
+  top-app-bar:
+    web:
+      framework_relation: custom-md3
+      repo_status: experimental
+      runtime_verified: false
+    android:
+      framework_relation: official-native
+      repo_status: documented
+      runtime_verified: false
+    harmonyos:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    ios:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    windows:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    linux-gtk:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    linux-qt:
+      framework_relation: partial
+      repo_status: documented
+      runtime_verified: false
+  navigation-bar:
+    web:
+      framework_relation: custom-md3
+      repo_status: experimental
+      runtime_verified: false
+    android:
+      framework_relation: official-native
+      repo_status: documented
+      runtime_verified: false
+    harmonyos:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    ios:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    windows:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    linux-gtk:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    linux-qt:
+      framework_relation: partial
+      repo_status: documented
+      runtime_verified: false
+  navigation-drawer:
+    web:
+      framework_relation: custom-md3
+      repo_status: experimental
+      runtime_verified: false
+    android:
+      framework_relation: official-native
+      repo_status: documented
+      runtime_verified: false
+    harmonyos:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    ios:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    windows:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    linux-gtk:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    linux-qt:
+      framework_relation: partial
+      repo_status: documented
+      runtime_verified: false
+  navigation-rail:
+    web:
+      framework_relation: custom-md3
+      repo_status: experimental
+      runtime_verified: false
+    android:
+      framework_relation: official-native
+      repo_status: documented
+      runtime_verified: false
+    harmonyos:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    ios:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    windows:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    linux-gtk:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    linux-qt:
+      framework_relation: partial
+      repo_status: documented
+      runtime_verified: false
+  search:
+    web:
+      framework_relation: custom-md3
+      repo_status: experimental
+      runtime_verified: false
+    android:
+      framework_relation: official-native
+      repo_status: documented
+      runtime_verified: false
+    harmonyos:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    ios:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    windows:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    linux-gtk:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    linux-qt:
+      framework_relation: partial
+      repo_status: documented
+      runtime_verified: false
+  tabs:
+    web:
+      framework_relation: custom-md3
+      repo_status: experimental
+      runtime_verified: false
+    android:
+      framework_relation: official-native
+      repo_status: documented
+      runtime_verified: false
+    harmonyos:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    ios:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    windows:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    linux-gtk:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    linux-qt:
+      framework_relation: partial
+      repo_status: documented
+      runtime_verified: false
+  checkbox:
+    web:
+      framework_relation: custom-md3
+      repo_status: experimental
+      runtime_verified: false
+    android:
+      framework_relation: official-native
+      repo_status: documented
+      runtime_verified: false
+    harmonyos:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    ios:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    windows:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    linux-gtk:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    linux-qt:
+      framework_relation: partial
+      repo_status: documented
+      runtime_verified: false
+  chips:
+    web:
+      framework_relation: custom-md3
+      repo_status: experimental
+      runtime_verified: false
+    android:
+      framework_relation: official-native
+      repo_status: documented
+      runtime_verified: false
+    harmonyos:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    ios:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    windows:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    linux-gtk:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    linux-qt:
+      framework_relation: partial
+      repo_status: documented
+      runtime_verified: false
+  date-pickers:
+    web:
+      framework_relation: custom-md3
+      repo_status: experimental
+      runtime_verified: false
+    android:
+      framework_relation: official-native
+      repo_status: documented
+      runtime_verified: false
+    harmonyos:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    ios:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    windows:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    linux-gtk:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    linux-qt:
+      framework_relation: partial
+      repo_status: documented
+      runtime_verified: false
+  menus:
+    web:
+      framework_relation: custom-md3
+      repo_status: experimental
+      runtime_verified: false
+    android:
+      framework_relation: official-native
+      repo_status: documented
+      runtime_verified: false
+    harmonyos:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    ios:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    windows:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    linux-gtk:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    linux-qt:
+      framework_relation: partial
+      repo_status: documented
+      runtime_verified: false
+  radio-button:
+    web:
+      framework_relation: custom-md3
+      repo_status: experimental
+      runtime_verified: false
+    android:
+      framework_relation: official-native
+      repo_status: documented
+      runtime_verified: false
+    harmonyos:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    ios:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    windows:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    linux-gtk:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    linux-qt:
+      framework_relation: partial
+      repo_status: documented
+      runtime_verified: false
+  sliders:
+    web:
+      framework_relation: custom-md3
+      repo_status: experimental
+      runtime_verified: false
+    android:
+      framework_relation: official-native
+      repo_status: documented
+      runtime_verified: false
+    harmonyos:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    ios:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    windows:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    linux-gtk:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    linux-qt:
+      framework_relation: partial
+      repo_status: documented
+      runtime_verified: false
+  switch:
+    web:
+      framework_relation: custom-md3
+      repo_status: experimental
+      runtime_verified: false
+    android:
+      framework_relation: official-native
+      repo_status: documented
+      runtime_verified: false
+    harmonyos:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    ios:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    windows:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    linux-gtk:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    linux-qt:
+      framework_relation: partial
+      repo_status: documented
+      runtime_verified: false
+  time-pickers:
+    web:
+      framework_relation: custom-md3
+      repo_status: experimental
+      runtime_verified: false
+    android:
+      framework_relation: official-native
+      repo_status: documented
+      runtime_verified: false
+    harmonyos:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    ios:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    windows:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    linux-gtk:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    linux-qt:
+      framework_relation: partial
+      repo_status: documented
+      runtime_verified: false
+  text-fields:
+    web:
+      framework_relation: custom-md3
+      repo_status: experimental
+      runtime_verified: false
+    android:
+      framework_relation: official-native
+      repo_status: documented
+      runtime_verified: false
+    harmonyos:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    ios:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    windows:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    linux-gtk:
+      framework_relation: custom-md3
+      repo_status: documented
+      runtime_verified: false
+    linux-qt:
+      framework_relation: partial
+      repo_status: documented
+      runtime_verified: false

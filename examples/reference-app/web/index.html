@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>MD3 Reference App</title>
+  <link rel="stylesheet" href="../../../tokens/generated/web/tokens.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="top-app-bar">
+    <span class="title">MD3 Reference</span>
+    <button class="icon-button" id="themeToggle" aria-label="Toggle light/dark theme">◐</button>
+  </header>
+  <div class="shell">
+    <nav class="nav" aria-label="Primary navigation">
+      <a href="#overview" aria-current="page">Overview</a>
+      <a href="#list">List</a>
+      <a href="#form">Form</a>
+      <a href="#settings">Settings</a>
+    </nav>
+    <main id="overview" data-reference-id="reference-overview">
+      <section class="hero">
+        <p class="eyebrow">Classic Material Design 3</p>
+        <h1>Cross-platform reference UI</h1>
+        <p>This page exercises tokens, cards, buttons, forms, states, and adaptive layout.</p>
+        <div class="actions"><button class="filled">Primary action</button><button class="outlined">Secondary action</button></div>
+      </section>
+      <section id="overview-cards" class="grid" aria-label="Example cards">
+        <article class="card"><h2>Semantic tokens</h2><p>Component colors use <code>--md-sys-*</code> roles.</p></article>
+        <article class="card"><h2>Adaptive</h2><p>Navigation and content reflow as the window grows.</p></article>
+        <article class="card"><h2>States</h2><p>Buttons define hover, focus-visible, pressed, and disabled behavior.</p></article>
+      </section>
+
+      <section id="list" class="form-section" data-reference-id="reference-list">
+        <h2>List</h2>
+        <div class="reference-list"><div><strong>Item A</strong><span>Supporting information</span></div><div><strong>Item B</strong><span>Supporting information</span></div></div>
+      </section>
+      <section id="form" class="form-section" data-reference-id="reference-form">
+        <h2>Form</h2>
+        <label class="field"><span>Display name</span><input id="name" autocomplete="name" value="Material User"></label>
+        <label class="switch-row"><input type="checkbox" id="notifications"><span>Enable notifications</span></label>
+        <button class="filled" id="save">Save</button>
+        <p id="status" role="status" aria-live="polite"></p>
+      </section>
+      <section id="settings" class="form-section" data-reference-id="reference-settings">
+        <h2>Settings</h2>
+        <p>Theme follows the system. Use the top button to switch between light and dark themes.</p>
+      </section>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
