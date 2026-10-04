@@ -187,7 +187,7 @@ struct CatalogView: View {
     }
 
     @ViewBuilder private func section<Content:View>(_ id:String,_ title:String,@ViewBuilder content:()->Content)->some View {
-        VStack(alignment:.leading,spacing:14){Text(title).font(.title3.weight(.semibold)).fixedSize(horizontal:false,vertical:true);Text(id).font(.caption).foregroundStyle(onSurfaceVariant).fixedSize(horizontal:false,vertical:true).accessibilityHidden(true);content()}
+        VStack(alignment:.leading,spacing:14){Text(title).font(.title3.weight(.semibold));content()}
             .padding(20).frame(maxWidth:.infinity,alignment:.leading).background(surfaceContainer).clipShape(RoundedRectangle(cornerRadius:20)).accessibilityIdentifier(id)
     }
 }
