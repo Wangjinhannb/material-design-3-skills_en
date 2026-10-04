@@ -1,2 +1,87 @@
 import SwiftUI
-struct ContentView:View{@State private var name="Material User";@State private var notifications=true;@State private var saved=false;var body:some View{NavigationStack{ScrollView{VStack(alignment:.leading,spacing:18){Text("Classic Material Design 3").foregroundStyle(Color(red:.404,green:.314,blue:.643));Text("Cross-platform reference app").font(.largeTitle.weight(.medium));Button("Primary action"){}.buttonStyle(.borderedProminent);GroupBox("Overview"){HStack{card("Token");card("Adaptive");card("State")}}.accessibilityIdentifier("reference-overview");GroupBox("List"){VStack{row("Item A");row("Item B")}}.accessibilityIdentifier("reference-list");GroupBox("Form"){VStack(alignment:.leading,spacing:12){TextField("Display name",text:$name).textFieldStyle(.roundedBorder);Toggle("Enable notifications",isOn:$notifications);Button("Save"){saved=true};if saved{Text("Settings saved").foregroundStyle(.tint)}}}.accessibilityIdentifier("reference-form");GroupBox("Settings"){Text("Theme follows the system; content stays readable and operable as the window changes.")}.accessibilityIdentifier("reference-settings") }.padding(20)}.navigationTitle("MD3 Reference")}}@ViewBuilder private func card(_ s:String)->some View{Text(s).frame(maxWidth:.infinity,minHeight:70).background(Color.primary.opacity(.06)).clipShape(RoundedRectangle(cornerRadius:12))}@ViewBuilder private func row(_ s:String)->some View{HStack{Circle().fill(.tint.opacity(.2)).frame(width:40,height:40);VStack(alignment:.leading){Text(s);Text("Supporting information").font(.caption).foregroundStyle(.secondary)};Spacer()}.padding(.vertical,6)}}
+
+struct ContentView: View {
+    @State private var name = "Material User"
+    @State private var notifications = true
+    @State private var saved = false
+
+    var body: some View {
+        NavigationStack {
+            ScrollView {
+                VStack(alignment: .leading, spacing: 18) {
+                    Text("Classic Material Design 3")
+                        .foregroundStyle(Color(red: 0.404, green: 0.314, blue: 0.643))
+
+                    Text("Cross-platform reference app")
+                        .font(.largeTitle.weight(.medium))
+
+                    Button("Primary action") {}
+                        .buttonStyle(.borderedProminent)
+
+                    GroupBox("Overview") {
+                        HStack {
+                            card("Token")
+                            card("Adaptive")
+                            card("State")
+                        }
+                    }
+                    .accessibilityIdentifier("reference-overview")
+
+                    GroupBox("List") {
+                        VStack {
+                            row("Item A")
+                            row("Item B")
+                        }
+                    }
+                    .accessibilityIdentifier("reference-list")
+
+                    GroupBox("Form") {
+                        VStack(alignment: .leading, spacing: 12) {
+                            TextField("Display name", text: $name)
+                                .textFieldStyle(.roundedBorder)
+                            Toggle("Enable notifications", isOn: $notifications)
+                            Button("Save") { saved = true }
+                            if saved {
+                                Text("Settings saved")
+                                    .foregroundStyle(.tint)
+                            }
+                        }
+                    }
+                    .accessibilityIdentifier("reference-form")
+
+                    GroupBox("Settings") {
+                        Text("Theme follows the system; content stays readable and operable as the window changes.")
+                    }
+                    .accessibilityIdentifier("reference-settings")
+                }
+                .padding(20)
+            }
+            .navigationTitle("MD3 Reference")
+        }
+    }
+
+    @ViewBuilder
+    private func card(_ value: String) -> some View {
+        Text(value)
+            .frame(maxWidth: .infinity, minHeight: 70)
+            .background(Color.primary.opacity(0.06))
+            .clipShape(RoundedRectangle(cornerRadius: 12))
+    }
+
+    @ViewBuilder
+    private func row(_ value: String) -> some View {
+        HStack {
+            Circle()
+                .fill(.tint.opacity(0.2))
+                .frame(width: 40, height: 40)
+            VStack(alignment: .leading) {
+                Text(value)
+                Text("Supporting information")
+                    .font(.caption)
+                    .foregroundStyle(.secondary)
+            }
+            Spacer()
+        }
+        .padding(.vertical, 6)
+    }
+}
