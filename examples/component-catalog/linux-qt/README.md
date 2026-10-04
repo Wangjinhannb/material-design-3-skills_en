@@ -1,4 +1,4 @@
-# Linux Qt Component Catalog
+﻿# Linux Qt Component Catalog
 
 Configure and build with Qt 6 and the required Qt Quick modules installed.
 
