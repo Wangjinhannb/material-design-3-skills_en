@@ -1,0 +1,24 @@
+name: harmonyos
+on:
+  push:
+    paths:
+      - 'examples/component-catalog/harmonyos/**'
+      - 'examples/reference-app/harmonyos/**'
+      - 'tools/validators/validate_harmonyos.py'
+      - '.github/workflows/harmonyos.yml'
+  pull_request:
+    paths:
+      - 'examples/component-catalog/harmonyos/**'
+      - 'examples/reference-app/harmonyos/**'
+      - 'tools/validators/validate_harmonyos.py'
+      - '.github/workflows/harmonyos.yml'
+permissions:
+  contents: read
+jobs:
+  static:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.13' }
+      - run: python tools/validators/validate_harmonyos.py
