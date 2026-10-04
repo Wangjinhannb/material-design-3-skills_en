@@ -205,7 +205,8 @@ private struct M3Card: View {
             Text("Related content")
         }
         .padding()
-        .frame(width: 145, alignment: .leading)\n        .frame(minHeight: 100, alignment: .leading)
+        .frame(width: 145, alignment: .leading)
+        .frame(minHeight: 100, alignment: .leading)
         .background(outlined ? Color.clear : surfaceContainer)
         .clipShape(RoundedRectangle(cornerRadius: 12))
         .overlay(RoundedRectangle(cornerRadius: 12).stroke(outlined ? outline : .clear))
