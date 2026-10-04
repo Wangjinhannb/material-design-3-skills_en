@@ -1,13 +1,56 @@
 import SwiftUI
+import UIKit
 
-private let primary = Color(red: 0.404, green: 0.314, blue: 0.643)
-private let primaryContainer = Color(red: 0.918, green: 0.867, blue: 1.0)
-private let secondaryContainer = Color(red: 0.910, green: 0.875, blue: 0.941)
-private let surfaceContainer = Color(red: 0.949, green: 0.929, blue: 0.953)
-private let outline = Color(red: 0.475, green: 0.455, blue: 0.494)
-private let onSurfaceVariant = Color(red: 0.286, green: 0.271, blue: 0.310)
-private let onSecondaryContainer = Color(red: 0.114, green: 0.098, blue: 0.169)
-private let error = Color(red: 0.702, green: 0.149, blue: 0.118)
+private func adaptiveColor(
+    light: (Double, Double, Double),
+    dark: (Double, Double, Double)
+) -> Color {
+    Color(uiColor: UIColor { traits in
+        let value = traits.userInterfaceStyle == .dark ? dark : light
+        return UIColor(red: value.0, green: value.1, blue: value.2, alpha: 1)
+    })
+}
+
+private let primary = adaptiveColor(
+    light: (103.0 / 255.0, 80.0 / 255.0, 164.0 / 255.0),
+    dark: (208.0 / 255.0, 188.0 / 255.0, 1.0)
+)
+private let primaryContainer = adaptiveColor(
+    light: (234.0 / 255.0, 221.0 / 255.0, 1.0),
+    dark: (79.0 / 255.0, 55.0 / 255.0, 139.0 / 255.0)
+)
+private let secondaryContainer = adaptiveColor(
+    light: (232.0 / 255.0, 222.0 / 255.0, 248.0 / 255.0),
+    dark: (74.0 / 255.0, 68.0 / 255.0, 88.0 / 255.0)
+)
+private let surfaceContainer = adaptiveColor(
+    light: (243.0 / 255.0, 237.0 / 255.0, 247.0 / 255.0),
+    dark: (33.0 / 255.0, 31.0 / 255.0, 38.0 / 255.0)
+)
+private let outline = adaptiveColor(
+    light: (121.0 / 255.0, 116.0 / 255.0, 126.0 / 255.0),
+    dark: (147.0 / 255.0, 143.0 / 255.0, 153.0 / 255.0)
+)
+private let onSurfaceVariant = adaptiveColor(
+    light: (73.0 / 255.0, 69.0 / 255.0, 79.0 / 255.0),
+    dark: (202.0 / 255.0, 196.0 / 255.0, 208.0 / 255.0)
+)
+private let onSecondaryContainer = adaptiveColor(
+    light: (29.0 / 255.0, 25.0 / 255.0, 43.0 / 255.0),
+    dark: (232.0 / 255.0, 222.0 / 255.0, 248.0 / 255.0)
+)
+private let error = adaptiveColor(
+    light: (179.0 / 255.0, 38.0 / 255.0, 30.0 / 255.0),
+    dark: (242.0 / 255.0, 184.0 / 255.0, 181.0 / 255.0)
+)
+private let inverseSurface = adaptiveColor(
+    light: (50.0 / 255.0, 47.0 / 255.0, 53.0 / 255.0),
+    dark: (230.0 / 255.0, 224.0 / 255.0, 233.0 / 255.0)
+)
+private let inverseOnSurface = adaptiveColor(
+    light: (245.0 / 255.0, 239.0 / 255.0, 247.0 / 255.0),
+    dark: (50.0 / 255.0, 47.0 / 255.0, 53.0 / 255.0)
+)
 
 struct CatalogView: View {
     @State private var showDialog = false
@@ -59,10 +102,32 @@ struct CatalogView: View {
         section("component-floating-action-button", "Floating action button") { HorizontalRow { CircleButton("+"); CircleButton("+"); CircleButton("+"); M3Button("＋ New", tonal: true) } }
         section("component-icon-buttons", "Icon buttons") { HorizontalRow { CircleButton("☆"); CircleButton("★",filled:true); CircleButton("⋯",tonal:true); CircleButton("✎",outlined:true) } }
         section("component-segmented-buttons", "Segmented buttons") { M3SegmentedControl(labels: ["List", "Grid", "Compact"], selection: $selectedSegment) }
-        section("component-badges", "Badges") { HStack { Text("Messages").overlay(alignment:.topTrailing){Circle().fill(error).frame(width:8,height:8).offset(x:7,y:-5)}; Text("12").font(.caption.bold()).padding(.horizontal,8).padding(.vertical,4).background(error).foregroundStyle(.white).clipShape(Capsule()) } }
-        section("component-progress-indicators", "Progress indicators") { VStack(alignment:.leading){ProgressView(value:0.62).tint(primary);ProgressView().tint(primary)} }
-        section("component-snackbars", "Snackbar") { HStack { Text("Settings saved"); Spacer(); Button("Undo"){} }.padding().background(Color.primary.opacity(0.9)).foregroundStyle(Color(.systemBackground)).clipShape(RoundedRectangle(cornerRadius:4)) }
-        section("component-tooltips", "Tooltips") { Text("Long press or hover uses the platform help affordance").font(.callout).padding(10).background(Color.primary.opacity(0.9)).foregroundStyle(Color(.systemBackground)).clipShape(RoundedRectangle(cornerRadius:4)) }
+        section("component-badges", "Badges") { HStack { Text("Messages").overlay(alignment:.topTrailing){Circle().fill(error).frame(width:8,height:8).offset(x:7,y:-5)}; Text("12").font(.body.weight(.semibold)).padding(.horizontal,8).padding(.vertical,4).background(error).foregroundStyle(.white).clipShape(Capsule()) } }
+        section("component-progress-indicators", "Progress indicators") {
+            VStack(alignment: .leading) {
+                ProgressView(value: 0.62) { Text("Progress") }.tint(primary)
+                ProgressView("Loading").tint(primary)
+            }
+        }
+        section("component-snackbars", "Snackbar") {
+            HStack {
+                Text("Settings saved")
+                Spacer()
+                Button("Undo") {}
+            }
+            .padding()
+            .background(inverseSurface)
+            .foregroundStyle(inverseOnSurface)
+            .clipShape(RoundedRectangle(cornerRadius: 4))
+        }
+        section("component-tooltips", "Tooltips") {
+            Text("Long press or hover uses the platform help affordance")
+                .font(.callout)
+                .padding(10)
+                .background(inverseSurface)
+                .foregroundStyle(inverseOnSurface)
+                .clipShape(RoundedRectangle(cornerRadius: 4))
+        }
         section("component-bottom-sheets", "Bottom sheet") { M3Button("Open sheet", outlined:true, action:{showSheet=true}) }
         section("component-cards", "Cards") { HorizontalRow { M3Card("Filled");M3Card("Outlined",outlined:true);M3Card("Elevated",elevated:true) } }
         section("component-carousel", "Carousel") { ScrollView(.horizontal){HStack{ForEach(1...4,id:\.self){n in Text(String(format:"%02d",n)).font(.title2).frame(width:150,height:96).background(primaryContainer).clipShape(RoundedRectangle(cornerRadius:20))}}}.scrollIndicators(.hidden) }
@@ -78,7 +143,16 @@ struct CatalogView: View {
         section("component-navigation-bar", "Navigation bar") { HorizontalRow { NavItem("⌂","Home",selected:true);NavItem("☆","Saved");NavItem("⚙","Settings") }.padding(8).background(surfaceContainer).clipShape(RoundedRectangle(cornerRadius:18)) }
         section("component-navigation-drawer", "Navigation drawer") { VStack(alignment:.leading){DrawerItem("Inbox",selected:true);DrawerItem("Drafts");DrawerItem("Archive")}.frame(maxWidth:260,alignment:.leading) }
         section("component-navigation-rail", "Navigation rail") { HorizontalRow { NavItem("⌂","Home",selected:true);NavItem("☆","Saved");NavItem("⚙","Settings") }.padding(8).background(surfaceContainer).clipShape(RoundedRectangle(cornerRadius:18)) }
-        section("component-search", "Search") { HStack{Image(systemName:"magnifyingglass");TextField("Search",text:$search)}.padding(.horizontal,18).frame(height:56).background(surfaceContainer).clipShape(Capsule()) }
+        section("component-search", "Search") {
+            HStack {
+                Image(systemName: "magnifyingglass").accessibilityHidden(true)
+                TextField("Search", text: $search)
+            }
+            .padding(.horizontal, 18)
+            .frame(minHeight: 56)
+            .background(surfaceContainer)
+            .clipShape(Capsule())
+        }
         section("component-tabs", "Tabs") { M3SegmentedControl(labels: ["Overview", "Activity", "Settings"], selection: $selectedTab) }
         section("component-checkbox", "Checkbox") { Toggle("Selected",isOn:$checked).toggleStyle(.checkboxLike) }
     }
@@ -101,7 +175,12 @@ struct CatalogView: View {
                         }
                     }
                 }
-        section("component-sliders", "Slider") { Slider(value:$slider).tint(primary) }
+        section("component-sliders", "Slider") {
+            Slider(value: $slider, in: 0...1) {
+                Text("Value")
+            }
+            .tint(primary)
+        }
         section("component-switch", "Switch") { Toggle("Notifications",isOn:$checked).tint(primary) }
         section("component-time-pickers", "Time picker") { DatePicker("Time",selection:$date,displayedComponents:.hourAndMinute).datePickerStyle(.compact) }
         section("component-text-fields", "Text fields") { VStack { TextField("Filled",text:$field).padding(14).background(surfaceContainer).clipShape(RoundedRectangle(cornerRadius:4));TextField("Outlined",text:$field).padding(14).overlay(RoundedRectangle(cornerRadius:4).stroke(outline)) } }
@@ -109,7 +188,7 @@ struct CatalogView: View {
 
     @ViewBuilder private func section<Content:View>(_ id:String,_ title:String,@ViewBuilder content:()->Content)->some View {
         VStack(alignment:.leading,spacing:14){Text(title).font(.title3.weight(.semibold)).fixedSize(horizontal:false,vertical:true);Text(id).font(.caption).foregroundStyle(onSurfaceVariant).fixedSize(horizontal:false,vertical:true);content()}
-            .padding(20).frame(maxWidth:.infinity,alignment:.leading).background(surfaceContainer.opacity(0.7)).clipShape(RoundedRectangle(cornerRadius:20)).accessibilityIdentifier(id)
+            .padding(20).frame(maxWidth:.infinity,alignment:.leading).background(surfaceContainer).clipShape(RoundedRectangle(cornerRadius:20)).accessibilityIdentifier(id)
     }
 }
 
@@ -185,6 +264,21 @@ private struct CircleButton: View {
         .foregroundStyle(filled ? .white : tonal ? onSecondaryContainer : primary)
         .clipShape(Circle())
         .overlay(Circle().stroke(outlined ? outline : .clear))
+        .accessibilityLabel(accessibilityName)
+    }
+
+    private var accessibilityName: String {
+        switch label {
+        case "+": return "Add"
+        case "☆": return "Favorite"
+        case "★": return "Favorite selected"
+        case "⋯": return "More options"
+        case "✎": return "Edit"
+        case "☰": return "Menu"
+        case "⌕": return "Search"
+        case "←": return "Back"
+        default: return label
+        }
     }
 }
 
