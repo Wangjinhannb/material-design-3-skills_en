@@ -2,7 +2,7 @@
 
 Provenance: `official-md3` + `repo-convention`.
 
-Use semantic M3 type roles. Canonical values live in `tokens/source/typography.tokens.json`.
+Use semantic M3 type roles rather than page-local font sizes. The canonical scale is stored in `tokens/source/typography.tokens.json` and mapped to platform units by the token generator.
 
 ## Role families
 

@@ -1,5 +1,3 @@
-﻿# Harmonyos Reference App
+﻿# HarmonyOS Reference App
 
-Import the project into DevEco Studio with a compatible HarmonyOS SDK.
-
-Hosted CI performs project-structure and ArkTS static checks; runtime verification needs DevEco Studio or a configured runner.
+Import into DevEco Studio with a compatible HarmonyOS SDK. The app implements the shared reference-app sections with ArkUI.

@@ -1,7 +1,5 @@
 ﻿# Date pickers (`date-pickers`)
 
-Provenance: `official-md3` + `platform-adaptation`.
-
 ## Purpose
 
 Select a date or date range.
@@ -20,7 +18,7 @@ Select a date or date range.
 - `pressed`
 - `disabled`
 
-## Tokens
+## Token groups
 
 `color`, `typography`, `shape`, `state`
 
@@ -28,6 +26,7 @@ Select a date or date range.
 
 Date cells need full date names, selected state, and keyboard navigation.
 
-## Source
+
+## Official source
 
 - https://m3.material.io/components/date-pickers/overview

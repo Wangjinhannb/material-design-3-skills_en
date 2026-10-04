@@ -1,3 +1,3 @@
 ﻿# Navigation
 
-Choose navigation from destination hierarchy and available window space. Keep GTK keyboard and focus behavior.
+Map application navigation to M3 hierarchy while preserving desktop window/menu behavior expected by GTK users.

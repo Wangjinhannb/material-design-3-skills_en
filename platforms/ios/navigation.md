@@ -1,3 +1,3 @@
 ﻿# Navigation
 
-Use `NavigationStack` and native navigation behavior. Map visible structure to M3 bar, rail, or drawer patterns where needed.
+Use native NavigationStack/navigation behavior and map visible navigation structure to M3 bar/rail/drawer semantics where the platform supports it.

@@ -1,7 +1,5 @@
 ﻿# Sliders (`sliders`)
 
-Provenance: `official-md3` + `platform-adaptation`.
-
 ## Purpose
 
 Select a value from a continuous or discrete range.
@@ -20,7 +18,7 @@ Select a value from a continuous or discrete range.
 - `pressed`
 - `disabled`
 
-## Tokens
+## Token groups
 
 `color`, `typography`, `shape`, `state`
 
@@ -28,6 +26,7 @@ Select a value from a continuous or discrete range.
 
 Expose minimum, maximum, current value, and keyboard or assistive-technology adjustment.
 
-## Source
+
+## Official source
 
 - https://m3.material.io/components/sliders/overview

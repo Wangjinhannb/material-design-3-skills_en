@@ -1,7 +1,5 @@
 ﻿# Radio button (`radio-button`)
 
-Provenance: `official-md3` + `platform-adaptation`.
-
 ## Purpose
 
 Select one option from a mutually exclusive group.
@@ -20,7 +18,7 @@ Select one option from a mutually exclusive group.
 - `pressed`
 - `disabled`
 
-## Tokens
+## Token groups
 
 `color`, `typography`, `shape`, `state`
 
@@ -28,6 +26,7 @@ Select one option from a mutually exclusive group.
 
 Expose the group relationship and radio selection state.
 
-## Source
+
+## Official source
 
 - https://m3.material.io/components/radio-button/overview

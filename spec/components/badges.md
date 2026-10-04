@@ -1,7 +1,5 @@
 ﻿# Badges (`badges`)
 
-Provenance: `official-md3` + `platform-adaptation`.
-
 ## Purpose
 
 Communicate a count or status near an icon or navigation destination.
@@ -15,7 +13,7 @@ Communicate a count or status near an icon or navigation destination.
 
 - `default`
 
-## Tokens
+## Token groups
 
 `color`, `typography`, `shape`, `state`
 
@@ -23,6 +21,7 @@ Communicate a count or status near an icon or navigation destination.
 
 Expose the badge count or status to assistive technology.
 
-## Source
+
+## Official source
 
 - https://m3.material.io/components/badges/overview

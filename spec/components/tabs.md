@@ -1,7 +1,5 @@
 ﻿# Tabs (`tabs`)
 
-Provenance: `official-md3` + `platform-adaptation`.
-
 ## Purpose
 
 Switch between related views at the same hierarchy level.
@@ -19,7 +17,7 @@ Switch between related views at the same hierarchy level.
 - `pressed`
 - `disabled`
 
-## Tokens
+## Token groups
 
 `color`, `typography`, `shape`, `state`
 
@@ -27,6 +25,7 @@ Switch between related views at the same hierarchy level.
 
 Use equivalent tablist, tab, and tabpanel semantics and keyboard behavior on the target platform.
 
-## Source
+
+## Official source
 
 - https://m3.material.io/components/tabs/overview

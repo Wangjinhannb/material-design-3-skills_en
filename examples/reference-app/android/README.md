@@ -1,5 +1,3 @@
 ﻿# Android Reference App
 
-Open the directory in Android Studio or run the included Gradle build.
-
-The CI workflow assembles, lints, and runs configured tests.
+Open in Android Studio or use the included Gradle wrapper. The app implements the shared reference-app sections with Compose Material 3.

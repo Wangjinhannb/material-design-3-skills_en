@@ -234,7 +234,7 @@ sources:
   license_or_usage_notes: Linked and paraphrased only; follow the upstream license
     and terms.
   notes: WinUI 3 implementation reference. The default visual language is Fluent;
-    this repository layers M3 styling on top.
+    the project layers M3 styling on top.
 - id: windows-controls
   title: Controls for Windows apps
   organization: Microsoft Learn
@@ -278,7 +278,7 @@ sources:
   normative_or_informative: implementation-reference
   license_or_usage_notes: Linked and paraphrased only; follow the upstream license
     and terms.
-  notes: Adwaita is a GNOME design system. This repository may reuse platform capabilities
+  notes: Adwaita is a GNOME design system. The project may reuse platform capabilities
     without adopting its visual language.
 - id: qt-material-style
   title: Qt Quick Controls Material Style

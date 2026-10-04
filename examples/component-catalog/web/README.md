@@ -1,5 +1,3 @@
 ﻿# Web Component Catalog
 
-Open `index.html` through the test/dev server used by the Web workflow.
-
-Playwright covers interaction, axe accessibility checks, and visual regression.
+Run the dev server and open `index.html`. CI runs Playwright interaction tests, axe checks, and visual regression.

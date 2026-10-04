@@ -1,3 +1,3 @@
 ﻿# Navigation
 
-Choose navigation from destination hierarchy and available window space. Use baseline-compatible Material3 navigation components.
+Select NavigationBar, NavigationRail, or drawer patterns based on window size and task structure. Preserve Android back behavior and predictive-back integration where applicable.

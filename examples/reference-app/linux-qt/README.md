@@ -1,5 +1,3 @@
 ﻿# Linux Qt Reference App
 
-Configure and build with Qt 6 and the required Qt Quick modules installed.
-
-CI performs a build, headless smoke check, and screenshot artifact where supported.
+Configure with CMake and Qt 6 Quick modules. The app implements the shared reference-app sections in QML.

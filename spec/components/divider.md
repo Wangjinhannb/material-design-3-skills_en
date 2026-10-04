@@ -1,7 +1,5 @@
 ﻿# Divider (`divider`)
 
-Provenance: `official-md3` + `platform-adaptation`.
-
 ## Purpose
 
 Separate content without introducing a strong container.
@@ -15,7 +13,7 @@ Separate content without introducing a strong container.
 
 - `default`
 
-## Tokens
+## Token groups
 
 `color`, `typography`, `shape`, `state`
 
@@ -23,6 +21,7 @@ Separate content without introducing a strong container.
 
 Purely visual dividers should not create unnecessary accessibility nodes.
 
-## Source
+
+## Official source
 
 - https://m3.material.io/components/divider/overview

@@ -1,7 +1,5 @@
 ﻿# Floating action button (`floating-action-button`)
 
-Provenance: `official-md3` + `platform-adaptation`.
-
 ## Purpose
 
 Emphasize a high-priority action for the current screen.
@@ -21,7 +19,7 @@ Emphasize a high-priority action for the current screen.
 - `pressed`
 - `disabled`
 
-## Tokens
+## Token groups
 
 `color`, `typography`, `shape`, `state`
 
@@ -29,10 +27,11 @@ Emphasize a high-priority action for the current screen.
 
 Icon-only FABs require an accessible name.
 
-## Adaptive
+
+## Adaptive behavior
 
 Use a FAB only for a high-priority action. Reposition it when wider layouts change the information architecture.
 
-## Source
+## Official source
 
 - https://m3.material.io/components/floating-action-button/overview

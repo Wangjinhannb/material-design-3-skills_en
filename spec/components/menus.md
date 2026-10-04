@@ -1,7 +1,5 @@
 ﻿# Menus (`menus`)
 
-Provenance: `official-md3` + `platform-adaptation`.
-
 ## Purpose
 
 Present a temporary set of actions or options.
@@ -19,7 +17,7 @@ Present a temporary set of actions or options.
 - `pressed`
 - `disabled`
 
-## Tokens
+## Token groups
 
 `color`, `typography`, `shape`, `state`
 
@@ -27,6 +25,7 @@ Present a temporary set of actions or options.
 
 Use platform menu semantics and handle arrow keys, Escape, and focus return correctly.
 
-## Source
+
+## Official source
 
 - https://m3.material.io/components/menus/overview

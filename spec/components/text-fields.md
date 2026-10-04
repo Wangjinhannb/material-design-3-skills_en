@@ -1,7 +1,5 @@
 ﻿# Text fields (`text-fields`)
 
-Provenance: `official-md3` + `platform-adaptation`.
-
 ## Purpose
 
 Enter or edit text.
@@ -19,7 +17,7 @@ Enter or edit text.
 - `error`
 - `disabled`
 
-## Tokens
+## Token groups
 
 `color`, `typography`, `shape`, `state`
 
@@ -27,6 +25,7 @@ Enter or edit text.
 
 Provide a persistent accessible name. Associate errors with the field and do not rely on color alone.
 
-## Source
+
+## Official source
 
 - https://m3.material.io/components/text-fields/overview

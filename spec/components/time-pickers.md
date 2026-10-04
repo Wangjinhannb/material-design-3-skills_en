@@ -1,7 +1,5 @@
 ﻿# Time pickers (`time-pickers`)
 
-Provenance: `official-md3` + `platform-adaptation`.
-
 ## Purpose
 
 Enter or select a time.
@@ -19,7 +17,7 @@ Enter or select a time.
 - `pressed`
 - `disabled`
 
-## Tokens
+## Token groups
 
 `color`, `typography`, `shape`, `state`
 
@@ -27,6 +25,7 @@ Enter or select a time.
 
 Every time field or dial value needs a clear accessible name and current value.
 
-## Source
+
+## Official source
 
 - https://m3.material.io/components/time-pickers/overview

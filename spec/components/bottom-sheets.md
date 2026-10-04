@@ -1,7 +1,5 @@
 ﻿# Bottom sheets (`bottom-sheets`)
 
-Provenance: `official-md3` + `platform-adaptation`.
-
 ## Purpose
 
 Present supporting content or tasks from the bottom edge.
@@ -19,7 +17,7 @@ Present supporting content or tasks from the bottom edge.
 - `pressed`
 - `disabled`
 
-## Tokens
+## Token groups
 
 `color`, `typography`, `shape`, `state`
 
@@ -27,6 +25,7 @@ Present supporting content or tasks from the bottom edge.
 
 Modal sheets manage focus and prevent background interaction while open.
 
-## Source
+
+## Official source
 
 - https://m3.material.io/components/bottom-sheets/overview

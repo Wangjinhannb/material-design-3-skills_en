@@ -1,5 +1,3 @@
-﻿# Ios Reference App
+﻿# iOS Reference App
 
-Generate/open the Xcode project as described by `project.yml` and build on macOS.
-
-The CI workflow runs Xcode build/test and the configured accessibility audit.
+Generate the Xcode project from `project.yml` with XcodeGen. The app implements the shared reference-app sections with SwiftUI.

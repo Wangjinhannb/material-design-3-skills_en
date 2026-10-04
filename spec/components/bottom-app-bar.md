@@ -1,7 +1,5 @@
 ﻿# Bottom app bar (`bottom-app-bar`)
 
-Provenance: `official-md3` + `platform-adaptation`.
-
 ## Purpose
 
 Place primary actions at the bottom of a mobile layout, optionally alongside a FAB.
@@ -18,7 +16,7 @@ Place primary actions at the bottom of a mobile layout, optionally alongside a F
 - `pressed`
 - `disabled`
 
-## Tokens
+## Token groups
 
 `color`, `typography`, `shape`, `state`
 
@@ -26,6 +24,7 @@ Place primary actions at the bottom of a mobile layout, optionally alongside a F
 
 Every action requires a clear name. Avoid system gesture areas.
 
-## Source
+
+## Official source
 
 - https://m3.material.io/components/bottom-app-bar/overview

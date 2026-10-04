@@ -1,7 +1,5 @@
 ﻿# Search (`search`)
 
-Provenance: `official-md3` + `platform-adaptation`.
-
 ## Purpose
 
 Start a search, accept input, and present results.
@@ -19,7 +17,7 @@ Start a search, accept input, and present results.
 - `pressed`
 - `disabled`
 
-## Tokens
+## Token groups
 
 `color`, `typography`, `shape`, `state`
 
@@ -27,6 +25,7 @@ Start a search, accept input, and present results.
 
 The input requires an accessible name. Announce meaningful result updates when appropriate.
 
-## Source
+
+## Official source
 
 - https://m3.material.io/components/search/overview

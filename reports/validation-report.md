@@ -1,9 +1,20 @@
 ﻿# Validation Report
 
-Run:
+Core repository validation:
 
 ```bash
-make check
+python tools/token_generator/generate.py
+python tools/component_generator/generate_component_docs.py
+python tools/support_matrix/generate.py
+python tools/source_checker/check_sources.py
+python tools/validators/validate_repo.py
+python tools/validators/check_writing_style.py
+python tools/validators/check_english_only.py
+python tools/validators/validate_catalog_coverage.py
+python tools/validators/validate_reference_coverage.py
+python tools/validators/validate_skill_evals.py
+python tools/validators/check_generated_determinism.py
+python -m unittest discover -s tests -p 'test_*.py'
 ```
 
-Platform builds run in GitHub Actions. HarmonyOS runtime checks require DevEco Studio or a runner with the HarmonyOS SDK.
+Platform builds are recorded by GitHub Actions. HarmonyOS runtime verification remains a DevEco Studio/self-hosted-runner task.

@@ -1,7 +1,5 @@
 ﻿# Buttons (`buttons`)
 
-Provenance: `official-md3` + `platform-adaptation`.
-
 ## Purpose
 
 Trigger a clear action.
@@ -22,7 +20,7 @@ Trigger a clear action.
 - `pressed`
 - `disabled`
 
-## Tokens
+## Token groups
 
 `color`, `typography`, `shape`, `state`
 
@@ -30,6 +28,7 @@ Trigger a clear action.
 
 Accessible names must describe the action. State must not rely on color alone.
 
-## Source
+
+## Official source
 
 - https://m3.material.io/components/buttons/overview

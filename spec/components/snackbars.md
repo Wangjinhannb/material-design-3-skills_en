@@ -1,7 +1,5 @@
 ﻿# Snackbars (`snackbars`)
 
-Provenance: `official-md3` + `platform-adaptation`.
-
 ## Purpose
 
 Provide brief feedback and, when useful, one related action.
@@ -16,7 +14,7 @@ Provide brief feedback and, when useful, one related action.
 
 - `default`
 
-## Tokens
+## Token groups
 
 `color`, `typography`, `shape`, `state`
 
@@ -24,6 +22,7 @@ Provide brief feedback and, when useful, one related action.
 
 Do not move focus when a snackbar appears. Persistent errors need a persistent accessible message.
 
-## Source
+
+## Official source
 
 - https://m3.material.io/components/snackbars/overview

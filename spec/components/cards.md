@@ -1,7 +1,5 @@
 ﻿# Cards (`cards`)
 
-Provenance: `official-md3` + `platform-adaptation`.
-
 ## Purpose
 
 Group related content and actions in one container.
@@ -20,7 +18,7 @@ Group related content and actions in one container.
 - `pressed`
 - `disabled`
 
-## Tokens
+## Token groups
 
 `color`, `typography`, `shape`, `state`
 
@@ -28,6 +26,7 @@ Group related content and actions in one container.
 
 Treat the whole card as one interactive target only when the entire card performs one action.
 
-## Source
+
+## Official source
 
 - https://m3.material.io/components/cards/overview

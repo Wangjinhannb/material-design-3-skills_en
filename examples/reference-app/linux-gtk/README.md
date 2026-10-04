@@ -1,5 +1,3 @@
-﻿# Linux Gtk Reference App
+﻿# Linux GTK Reference App
 
-Configure and build with the GTK 4 development packages installed.
-
-CI performs a build, headless smoke check, and screenshot artifact where supported.
+Configure with CMake and GTK 4 development packages. The app implements the shared reference-app sections with GTK widgets.

@@ -1,3 +1,3 @@
 ﻿# Navigation
 
-Choose navigation from destination hierarchy and available window space. Preserve WinUI keyboard and focus behavior.
+Use native window/navigation infrastructure and implement M3 navigation hierarchy with appropriate controls and responsive layout changes.

@@ -1,3 +1,3 @@
 ﻿# Navigation
 
-Choose navigation from destination hierarchy and available window space. Keep ArkUI system navigation behavior.
+Keep HarmonyOS system navigation and lifecycle behavior native. Map top-level destinations to M3 navigation patterns based on available space.

@@ -1,7 +1,5 @@
 ﻿# Tooltips (`tooltips`)
 
-Provenance: `official-md3` + `platform-adaptation`.
-
 ## Purpose
 
 Explain unfamiliar controls or provide supplemental information.
@@ -16,7 +14,7 @@ Explain unfamiliar controls or provide supplemental information.
 - `hidden`
 - `visible`
 
-## Tokens
+## Token groups
 
 `color`, `typography`, `shape`, `state`
 
@@ -24,6 +22,7 @@ Explain unfamiliar controls or provide supplemental information.
 
 Task-critical information must also be available without hover and from keyboard focus.
 
-## Source
+
+## Official source
 
 - https://m3.material.io/components/tooltips/overview

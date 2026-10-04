@@ -1,7 +1,5 @@
 ﻿# Progress indicators (`progress-indicators`)
 
-Provenance: `official-md3` + `platform-adaptation`.
-
 ## Purpose
 
 Communicate loading or task progress.
@@ -17,7 +15,7 @@ Communicate loading or task progress.
 
 - `default`
 
-## Tokens
+## Token groups
 
 `color`, `typography`, `shape`, `state`
 
@@ -25,6 +23,7 @@ Communicate loading or task progress.
 
 Determinate progress exposes the current value. Indeterminate progress exposes an appropriate loading state.
 
-## Source
+
+## Official source
 
 - https://m3.material.io/components/progress-indicators/overview

@@ -1,7 +1,5 @@
 ﻿# Side sheets (`side-sheets`)
 
-Provenance: `official-md3` + `platform-adaptation`.
-
 ## Purpose
 
 Present supporting content from the side of a wider window.
@@ -19,7 +17,7 @@ Present supporting content from the side of a wider window.
 - `pressed`
 - `disabled`
 
-## Tokens
+## Token groups
 
 `color`, `typography`, `shape`, `state`
 
@@ -27,10 +25,11 @@ Present supporting content from the side of a wider window.
 
 Modal side sheets require focus containment and a clear close mechanism.
 
-## Adaptive
+
+## Adaptive behavior
 
 Use on layouts with enough width. Prefer another layout on compact windows.
 
-## Source
+## Official source
 
 - https://m3.material.io/components/side-sheets/overview

@@ -10,10 +10,8 @@ for c in data["components"]:
     variants="\n".join(f"- `{x}`" for x in c["variants"])
     states="\n".join(f"- `{x}`" for x in c["states"])
     groups=", ".join(f"`{x}`" for x in c["required_token_groups"])
-    adaptive=(f"\n## Adaptive\n\n{c['adaptive']}\n" if c.get('adaptive') else '')
+    adaptive = f"\n## Adaptive behavior\n\n{c['adaptive']}\n" if c.get('adaptive') else ""
     text=f"""# {c['name']} (`{c['id']}`)
-
-Provenance: `official-md3` + `platform-adaptation`.
 
 ## Purpose
 
@@ -27,15 +25,16 @@ Provenance: `official-md3` + `platform-adaptation`.
 
 {states}
 
-## Tokens
+## Token groups
 
 {groups}
 
 ## Accessibility
 
 {c['accessibility']}
+
 {adaptive}
-## Source
+## Official source
 
 - {c['official_url']}
 """

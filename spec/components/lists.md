@@ -1,7 +1,5 @@
 ﻿# Lists (`lists`)
 
-Provenance: `official-md3` + `platform-adaptation`.
-
 ## Purpose
 
 Arrange related information, selections, or actions vertically.
@@ -20,7 +18,7 @@ Arrange related information, selections, or actions vertically.
 - `pressed`
 - `disabled`
 
-## Tokens
+## Token groups
 
 `color`, `typography`, `shape`, `state`
 
@@ -28,10 +26,11 @@ Arrange related information, selections, or actions vertically.
 
 Keep item semantics, reading order, and interactive areas clear.
 
-## Adaptive
+
+## Adaptive behavior
 
 On wider layouts, lists may be paired with a detail pane.
 
-## Source
+## Official source
 
 - https://m3.material.io/components/lists/overview

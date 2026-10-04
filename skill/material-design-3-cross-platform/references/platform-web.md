@@ -1,19 +1,19 @@
 ﻿# Web — HTML / CSS / JavaScript
 
-Use semantic HTML, generated CSS tokens, and custom M3 styling. `@material/web` is optional.
+The repository uses a custom Classic M3 layer. `@material/web` is optional and is not treated as a complete current-M3 dependency because the upstream project is in maintenance mode.
 
 ## Implementation
 
-Start with native HTML semantics. Add ARIA only for custom patterns. Preserve keyboard behavior, focus visibility, form semantics, and disabled/error states.
+Prefer semantic HTML elements first, then add the minimum ARIA required by the component pattern. Custom components preserve keyboard behavior, focus visibility, form semantics, and disabled/error states.
 
-## Theme
+## Theme and tokens
 
-Bind generated CSS custom properties to semantic M3 roles. Support system theme plus an explicit app override.
+Map generated CSS custom properties to semantic M3 color, type, shape, state, elevation, and motion roles. Use `prefers-color-scheme` for system theme integration and keep an explicit application override when required. Consume `tokens/generated/web/` outputs through CSS custom properties. Application CSS should reference semantic roles instead of raw palette values.
 
-## Accessibility
+## Input and accessibility
 
-Support keyboard, pointer, touch, and screen readers. Use `:focus-visible`, WCAG 2.2 checks, ARIA APG for custom patterns, and axe regression tests.
+Support mouse, trackpad, keyboard, touch, and screen-reader interaction. Use `:focus-visible`; do not remove focus outlines without a visible replacement. Use native semantics where possible, ARIA Authoring Practices for custom patterns, WCAG 2.2 checks, keyboard tests, and axe for automated regression coverage.
 
 ## Verification
 
-Run syntax checks, Playwright flows, axe, and screenshot regression.
+Run syntax checks, unit/interaction tests, Playwright flows, axe accessibility checks, and screenshot regression in the Web workflow.

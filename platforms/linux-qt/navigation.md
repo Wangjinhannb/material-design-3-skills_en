@@ -1,3 +1,3 @@
 ﻿# Navigation
 
-Choose navigation from destination hierarchy and available window space. Keep Qt keyboard and focus behavior.
+Use platform-appropriate window/navigation structure and map visible destinations to M3 navigation components when useful.

@@ -1,3 +1,3 @@
 ﻿# Adaptive Layout
 
-Use window size, input method, insets, and content as layout inputs. Reflow fixed layouts. Preserve reading order, focus order, RTL, text expansion, and safe areas.
+Base layout changes on available window size, input method, insets, and content. Reflow rather than scale fixed canvases. Navigation may move between bar, rail, and drawer patterns. Preserve reading order, focus order, RTL, text expansion, and platform safe areas.

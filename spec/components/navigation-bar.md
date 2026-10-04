@@ -1,7 +1,5 @@
 ﻿# Navigation bar (`navigation-bar`)
 
-Provenance: `official-md3` + `platform-adaptation`.
-
 ## Purpose
 
 Switch between a small set of top-level destinations on compact windows.
@@ -18,7 +16,7 @@ Switch between a small set of top-level destinations on compact windows.
 - `pressed`
 - `disabled`
 
-## Tokens
+## Token groups
 
 `color`, `typography`, `shape`, `state`
 
@@ -26,10 +24,11 @@ Switch between a small set of top-level destinations on compact windows.
 
 Expose the current destination as selected.
 
-## Adaptive
+
+## Adaptive behavior
 
 Evaluate a navigation rail or drawer on medium and expanded windows.
 
-## Source
+## Official source
 
 - https://m3.material.io/components/navigation-bar/overview

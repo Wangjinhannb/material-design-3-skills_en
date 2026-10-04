@@ -6,6 +6,6 @@ Canonical data lives in:
 - `tokens/source/` for design values;
 - `spec/` for normative and explanatory design guidance.
 
-Regenerate generated files after source changes. Platform examples consume generated tokens. AI references stay shorter than the canonical docs.
+Generated files are replaced by generators rather than edited independently. Platform examples consume generated tokens where practical. AI references summarize canonical rules and stay intentionally smaller than the human documentation.
 
 CI runs determinism checks to catch drift between canonical files and generated outputs.

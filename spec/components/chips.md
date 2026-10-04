@@ -1,7 +1,5 @@
 ﻿# Chips (`chips`)
 
-Provenance: `official-md3` + `platform-adaptation`.
-
 ## Purpose
 
 Represent filters, input values, suggestions, or assistive actions.
@@ -21,7 +19,7 @@ Represent filters, input values, suggestions, or assistive actions.
 - `pressed`
 - `disabled`
 
-## Tokens
+## Token groups
 
 `color`, `typography`, `shape`, `state`
 
@@ -29,6 +27,7 @@ Represent filters, input values, suggestions, or assistive actions.
 
 Match semantic roles to the behavior of each chip type.
 
-## Source
+
+## Official source
 
 - https://m3.material.io/components/chips/overview

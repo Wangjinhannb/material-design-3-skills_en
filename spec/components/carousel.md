@@ -1,7 +1,5 @@
 ﻿# Carousel (`carousel`)
 
-Provenance: `official-md3` + `platform-adaptation`.
-
 ## Purpose
 
 Browse a related set of items horizontally in limited space.
@@ -20,7 +18,7 @@ Browse a related set of items horizontally in limited space.
 - `pressed`
 - `disabled`
 
-## Tokens
+## Token groups
 
 `color`, `typography`, `shape`, `state`
 
@@ -28,6 +26,7 @@ Browse a related set of items horizontally in limited space.
 
 Provide predictable keyboard and assistive-technology navigation. Auto-rotation must be stoppable or disabled.
 
-## Source
+
+## Official source
 
 - https://m3.material.io/components/carousel/overview

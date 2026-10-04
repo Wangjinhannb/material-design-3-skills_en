@@ -1,7 +1,5 @@
 ﻿# Top app bar (`top-app-bar`)
 
-Provenance: `official-md3` + `platform-adaptation`.
-
 ## Purpose
 
 Provide the page title, navigation, and primary actions.
@@ -21,7 +19,7 @@ Provide the page title, navigation, and primary actions.
 - `pressed`
 - `disabled`
 
-## Tokens
+## Token groups
 
 `color`, `typography`, `shape`, `state`
 
@@ -29,10 +27,11 @@ Provide the page title, navigation, and primary actions.
 
 Heading structure and action order should match the visual order.
 
-## Adaptive
+
+## Adaptive behavior
 
 Do not stretch a mobile app bar mechanically across wide windows.
 
-## Source
+## Official source
 
 - https://m3.material.io/components/top-app-bar/overview

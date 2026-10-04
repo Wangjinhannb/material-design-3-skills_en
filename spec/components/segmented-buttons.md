@@ -1,7 +1,5 @@
 ﻿# Segmented buttons (`segmented-buttons`)
 
-Provenance: `official-md3` + `platform-adaptation`.
-
 ## Purpose
 
 Switch between a small set of mutually exclusive or multi-select options.
@@ -19,7 +17,7 @@ Switch between a small set of mutually exclusive or multi-select options.
 - `pressed`
 - `disabled`
 
-## Tokens
+## Token groups
 
 `color`, `typography`, `shape`, `state`
 
@@ -27,6 +25,7 @@ Switch between a small set of mutually exclusive or multi-select options.
 
 Expose the group relationship and selected state.
 
-## Source
+
+## Official source
 
 - https://m3.material.io/components/segmented-buttons/overview

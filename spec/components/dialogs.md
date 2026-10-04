@@ -1,7 +1,5 @@
 ﻿# Dialogs (`dialogs`)
 
-Provenance: `official-md3` + `platform-adaptation`.
-
 ## Purpose
 
 Request confirmation, selection, or completion of a short task.
@@ -19,7 +17,7 @@ Request confirmation, selection, or completion of a short task.
 - `pressed`
 - `disabled`
 
-## Tokens
+## Token groups
 
 `color`, `typography`, `shape`, `state`
 
@@ -27,6 +25,7 @@ Request confirmation, selection, or completion of a short task.
 
 Move focus into the dialog when opened, restore it sensibly on close, and provide an accessible name or title.
 
-## Source
+
+## Official source
 
 - https://m3.material.io/components/dialogs/overview

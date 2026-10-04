@@ -1,7 +1,5 @@
 ﻿# Navigation drawer (`navigation-drawer`)
 
-Provenance: `official-md3` + `platform-adaptation`.
-
 ## Purpose
 
 Show top-level destinations and navigation groups.
@@ -19,7 +17,7 @@ Show top-level destinations and navigation groups.
 - `pressed`
 - `disabled`
 
-## Tokens
+## Token groups
 
 `color`, `typography`, `shape`, `state`
 
@@ -27,10 +25,11 @@ Show top-level destinations and navigation groups.
 
 Modal drawers manage focus and provide a close path.
 
-## Adaptive
+
+## Adaptive behavior
 
 A drawer may remain visible on expanded layouts and become modal on compact layouts.
 
-## Source
+## Official source
 
 - https://m3.material.io/components/navigation-drawer/overview

@@ -1,7 +1,5 @@
 ﻿# Icon buttons (`icon-buttons`)
 
-Provenance: `official-md3` + `platform-adaptation`.
-
 ## Purpose
 
 Expose common actions in a compact icon control.
@@ -22,7 +20,7 @@ Expose common actions in a compact icon control.
 - `pressed`
 - `disabled`
 
-## Tokens
+## Token groups
 
 `color`, `typography`, `shape`, `state`
 
@@ -30,6 +28,7 @@ Expose common actions in a compact icon control.
 
 Icon buttons require an accessible name and an adequate target size.
 
-## Source
+
+## Official source
 
 - https://m3.material.io/components/icon-buttons/overview

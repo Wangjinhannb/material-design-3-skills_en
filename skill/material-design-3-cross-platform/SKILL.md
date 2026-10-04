@@ -1,40 +1,36 @@
 ---
 name: material-design-3-cross-platform
-description: Build, audit, refactor, or explain strict Classic Material Design 3 interfaces for Web, Android, HarmonyOS, iOS, Windows, Linux GTK, and Linux Qt. Use when the user requests Material Design 3, M3, Material You UI, cross-platform M3 tokens/components, or an audit of an existing interface for M3, adaptive layout, state coverage, and accessibility. Distinguish Classic M3 from Material 3 Expressive, identify the target platform/framework, load only the relevant references, and never label a platform-default visual system as official Material 3.
+description: Build, audit, refactor, or explain Classic Material Design 3 interfaces for Web, Android, HarmonyOS, iOS, Windows, Linux GTK, and Linux Qt. Use for M3 UI work, Material You interfaces, cross-platform tokens/components, adaptive layout, state coverage, accessibility review, or migration from an existing UI. Keep Classic M3 separate from Material 3 Expressive, route to the target platform reference, and verify version-sensitive APIs against current first-party documentation.
 ---
 
 # Material Design 3 Cross-Platform
 
 ## Baseline
 
-1. Apply the repository Classic Material Design 3 baseline.
-2. Keep Material Design 1, Material Design 2, and Expressive-only rules out unless the user explicitly changes scope.
-3. Current SDKs may contain Expressive APIs. Use only capabilities confirmed to fit the Classic baseline.
-4. Do not describe SwiftUI, ArkUI, WinUI, GTK/libadwaita, or Qt defaults as official M3 implementations.
-5. Do not invent APIs, versions, components, or execution results. Check current first-party documentation for version-sensitive APIs.
-
-Read `references/source-policy.md` before version-sensitive or normative work.
+- Use the project Classic M3 baseline.
+- Exclude Material Design 1, Material Design 2, and Expressive-only rules unless scope changes explicitly.
+- Do not label SwiftUI, ArkUI, WinUI, GTK/libadwaita, or Qt defaults as official M3 implementations.
+- Do not invent APIs, versions, components, or execution results.
+- Read `references/source-policy.md` for normative or version-sensitive work.
 
 ## Modes
 
-Use one mode:
-
-- **Build** — create a new interface or component.
+- **Build** — create an interface or component.
 - **Audit** — inspect an existing interface or project.
-- **Refactor** — convert existing UI to Classic M3 while preserving product behavior.
+- **Refactor** — move an existing UI to Classic M3 without changing product behavior.
 - **Explain** — explain a rule, component, token, or platform mapping.
 
-## Platform routing
+## Platform reference
 
-- Web / HTML / CSS / JavaScript → `references/platform-web.md`
-- Android / Kotlin / Compose → `references/platform-android.md`
-- HarmonyOS / ArkTS / ArkUI → `references/platform-harmonyos.md`
-- iOS / iPadOS / SwiftUI → `references/platform-ios.md`
-- Windows / WinUI 3 / XAML → `references/platform-windows.md`
+- Web → `references/platform-web.md`
+- Android / Compose → `references/platform-android.md`
+- HarmonyOS / ArkUI → `references/platform-harmonyos.md`
+- iOS / SwiftUI → `references/platform-ios.md`
+- Windows / WinUI 3 → `references/platform-windows.md`
 - Linux / GTK → `references/platform-linux-gtk.md`
 - Linux / Qt / QML → `references/platform-linux-qt.md`
 
-Infer the platform from project files. Ask only when it cannot be inferred and changes the implementation.
+Infer the platform from project files. Ask only if the choice changes the implementation and cannot be inferred.
 
 ## Core references
 
@@ -45,70 +41,45 @@ For Build, Audit, and Refactor, load:
 - `references/accessibility.md`
 - the target-platform reference
 
-Load as needed:
+Load only when relevant:
 
-- theme/color → `references/color.md`
+- color → `references/color.md`
 - type/shape → `references/typography-shape.md`
-- interaction/motion → `references/motion-states.md`
-- large screens/window changes → `references/adaptive.md`
-- Audit/Refactor → `references/audit.md`
+- motion/states → `references/motion-states.md`
+- adaptive layout → `references/adaptive.md`
+- audit/refactor → `references/audit.md`
 
 ## Build
 
-1. Identify the screen purpose, platform, window range, and input methods.
-2. Select M3 components before defining container structure.
-3. Bind semantic color, type, shape, elevation, motion, and state tokens.
-4. Implement applicable hover, focus, pressed, selected, disabled, error, loading, and dragged states.
-5. Handle compact/medium/expanded or the platform-equivalent window changes.
-6. Handle keyboard, screen reader, text scaling, reduced motion, high contrast, and RTL where applicable.
-7. Use native platform APIs for system behavior. Mark repository-owned M3 implementations as adaptations.
-8. Run the audit checklist before delivery.
+1. Identify screen purpose, platform, window range, and input methods.
+2. Select components and bind semantic color, type, shape, elevation, motion, and state tokens.
+3. Implement applicable hover, focus, pressed, selected, disabled, error, loading, and dragged states.
+4. Handle window changes, keyboard, screen reader, text scaling, reduced motion, high contrast, and RTL as required.
+5. Keep system behavior native to the target platform.
+6. Run the audit checklist before delivery.
 
 ## Audit
 
-Check:
+Check baseline scope, color roles, typography, shape, elevation, component variants, interaction states, adaptive layout, accessibility, platform behavior, API validity, hard-coded values, deprecated APIs, and unsupported conformance claims.
 
-1. Classic baseline and Expressive contamination;
-2. semantic color roles and paired foreground roles;
-3. typography roles;
-4. shape roles;
-5. elevation and tonal hierarchy;
-6. component choice and variants;
-7. interaction-state coverage;
-8. navigation and adaptive layout;
-9. accessibility and input methods;
-10. platform behavior and API validity;
-11. hard-coded design values, deprecated APIs, invented APIs, and unsupported conformance claims.
-
-For each finding, include location, rule class, problem, impact, recommended fix, and severity/requirement level.
+Report each finding with location, rule class, problem, impact, fix, and severity.
 
 ## Refactor
 
-Preserve business logic and information architecture. Establish the token/theme layer, then replace component styling and state behavior. Reject corner-radius, color-swap, and shadow-only conversions.
+Preserve business logic and information architecture. Establish the token/theme layer first, then replace component styling and state behavior.
 
 ## Explain
 
-Separate:
+Separate official M3 guidance, platform adaptation, repository convention, and unverified behavior.
 
-- confirmed official M3 guidance;
-- platform adaptation;
-- repository convention;
-- unverified/currently ambiguous behavior.
+## Verification
 
-## Output quality
+Claim build, runtime, accessibility, or visual verification only when that check ran. Use target-platform code conventions and avoid presenting approximations as exact official values.
 
-- Follow target-platform code conventions.
-- Prefer minimal-intrusion changes in existing projects.
-- Claim build/runtime verification only when the check actually ran.
-- Do not present approximations as official exact values.
-- Load only references relevant to the current platform/task.
-
-## Optional static audit
-
-When the project filesystem is available:
+With project filesystem access:
 
 ```bash
 python scripts/static_audit.py <project-path>
 ```
 
-The script checks selected static risks. Run the full audit separately.
+The script covers a limited set of static risks; use the full audit for design review.

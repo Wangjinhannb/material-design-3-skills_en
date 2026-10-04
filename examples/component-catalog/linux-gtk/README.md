@@ -1,5 +1,3 @@
-﻿# Linux Gtk Component Catalog
+﻿# Linux GTK Component Catalog
 
-Configure and build with the GTK 4 development packages installed.
-
-CI performs a build, headless smoke check, and screenshot artifact where supported.
+Configure with CMake and GTK 4 development packages. CI builds, runs a headless smoke test, and uploads a screenshot artifact.

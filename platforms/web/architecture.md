@@ -1,3 +1,3 @@
 ﻿# Architecture
 
-HTML / CSS / JavaScript. Use semantic HTML, CSS custom properties, and the Classic M3 token/component layer.
+Semantic HTML, CSS custom properties, and JavaScript. Framework adapters may reuse the same token and component layer.

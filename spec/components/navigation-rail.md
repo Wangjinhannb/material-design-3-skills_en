@@ -1,7 +1,5 @@
 ﻿# Navigation rail (`navigation-rail`)
 
-Provenance: `official-md3` + `platform-adaptation`.
-
 ## Purpose
 
 Show primary destinations along the side of medium or wide layouts.
@@ -18,7 +16,7 @@ Show primary destinations along the side of medium or wide layouts.
 - `pressed`
 - `disabled`
 
-## Tokens
+## Token groups
 
 `color`, `typography`, `shape`, `state`
 
@@ -26,10 +24,11 @@ Show primary destinations along the side of medium or wide layouts.
 
 Expose selected destinations and preserve predictable keyboard order.
 
-## Adaptive
+
+## Adaptive behavior
 
 Common on medium and expanded windows.
 
-## Source
+## Official source
 
 - https://m3.material.io/components/navigation-rail/overview

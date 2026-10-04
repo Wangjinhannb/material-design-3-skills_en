@@ -1,7 +1,5 @@
 ﻿# Switch (`switch`)
 
-Provenance: `official-md3` + `platform-adaptation`.
-
 ## Purpose
 
 Toggle a binary setting immediately.
@@ -20,7 +18,7 @@ Toggle a binary setting immediately.
 - `pressed`
 - `disabled`
 
-## Tokens
+## Token groups
 
 `color`, `typography`, `shape`, `state`
 
@@ -28,6 +26,7 @@ Toggle a binary setting immediately.
 
 The label names the setting being changed and exposes the on/off state.
 
-## Source
+
+## Official source
 
 - https://m3.material.io/components/switch/overview

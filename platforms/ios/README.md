@@ -1,5 +1,3 @@
 ﻿# iOS / iPadOS — Swift / SwiftUI
 
-Use SwiftUI for platform behavior and map Classic M3 through tokens and component styling.
-
-Status: `metadata/platforms.yaml`, `PROJECT_STATUS.md`.
+SwiftUI supplies Apple platform behavior and accessibility primitives. The repository applies Classic M3 tokens, component styling, and state behavior.

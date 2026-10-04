@@ -1,7 +1,5 @@
 ﻿# Checkbox (`checkbox`)
 
-Provenance: `official-md3` + `platform-adaptation`.
-
 ## Purpose
 
 Toggle independent choices within a form or group.
@@ -22,7 +20,7 @@ Toggle independent choices within a form or group.
 - `pressed`
 - `disabled`
 
-## Tokens
+## Token groups
 
 `color`, `typography`, `shape`, `state`
 
@@ -30,6 +28,7 @@ Toggle independent choices within a form or group.
 
 Expose checked and indeterminate states.
 
-## Source
+
+## Official source
 
 - https://m3.material.io/components/checkbox/overview

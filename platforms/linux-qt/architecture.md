@@ -1,3 +1,5 @@
 ﻿# Architecture
 
-Qt 6 / QML / Qt Quick Controls. Apply the Classic M3 token/component layer on top.
+Qt 6, QML, Qt Quick, and Qt Quick Controls.
+
+Qt Material Style is a useful reference but is not treated as complete current Classic M3 conformance. The repository applies its own token and component review.

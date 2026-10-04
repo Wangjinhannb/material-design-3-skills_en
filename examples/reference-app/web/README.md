@@ -1,5 +1,3 @@
 ﻿# Web Reference App
 
-Open `index.html` through the test/dev server used by the Web workflow.
-
-Playwright covers interaction, axe accessibility checks, and visual regression.
+Run the static app from this directory. The page mirrors the shared reference-app sections used by the other platform examples.

@@ -1,14 +1,14 @@
 ﻿# Versioning
 
-Repository-owned interfaces and generated artifacts use semantic versioning.
+Repository releases follow semantic versioning for repository-owned interfaces and generated artifacts.
 
 Each release records:
 
 - Classic M3 baseline ID;
 - compatibility check date;
 - token schema version;
-- platform/toolchain versions;
-- Skill package status;
+- supported platform/toolchain versions;
+- Skill version and packaging status;
 - breaking changes and deprecations.
 
-Upstream documentation changes do not alter the baseline until reviewed and released.
+A change in upstream documentation does not silently change the baseline. Baseline updates are reviewed and released explicitly.

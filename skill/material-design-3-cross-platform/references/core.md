@@ -1,8 +1,8 @@
 ﻿# Core Rules
 
-- Use the repository Classic M3 baseline.
-- Use semantic tokens.
-- Preserve component purpose, anatomy, state, and accessibility behavior.
-- Preserve platform-native system behavior.
-- Exclude Expressive-only rules unless requested.
-- Label official guidance, platform adaptation, and repository convention separately.
+- Use the Classic M3 baseline defined by the project.
+- Use semantic tokens instead of local arbitrary visual values.
+- Preserve the purpose, anatomy, state, and accessibility behavior of the selected component.
+- Keep platform-native system behavior intact.
+- Treat Expressive-only rules as out of scope unless the user explicitly requests them.
+- Separate official M3 guidance from platform adaptation and repository convention.

@@ -1,5 +1,5 @@
 ﻿# Code of Conduct
 
-Be professional. Keep technical discussions evidence-based and reproducible. No harassment or personal attacks.
+Be professional and constructive. Discuss technical decisions with evidence, reproduce issues, and avoid personal attacks or harassment.
 
-Report conduct issues privately to the repository owner.
+Report conduct problems privately through the repository owner rather than escalating them in public threads.
