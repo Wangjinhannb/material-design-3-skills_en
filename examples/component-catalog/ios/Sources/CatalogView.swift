@@ -5,6 +5,7 @@ private let primaryContainer = Color(red: 0.918, green: 0.867, blue: 1.0)
 private let secondaryContainer = Color(red: 0.910, green: 0.875, blue: 0.941)
 private let surfaceContainer = Color(red: 0.949, green: 0.929, blue: 0.953)
 private let outline = Color(red: 0.475, green: 0.455, blue: 0.494)
+private let onSurfaceVariant = Color(red: 0.286, green: 0.271, blue: 0.310)
 
 struct CatalogView: View {
     @State private var showDialog = false
@@ -30,6 +31,7 @@ struct CatalogView: View {
                 .padding(20)
             }
             .navigationTitle("MD3 Component Catalog")
+            .navigationBarTitleDisplayMode(.inline)
         }
         .alert("Confirm action", isPresented: $showDialog) {
             Button("Cancel", role: .cancel) {}
@@ -52,7 +54,7 @@ struct CatalogView: View {
 
     @ViewBuilder private var primarySections: some View {
         section("component-buttons", "Buttons") { HStack { M3Button("Filled", filled: true); M3Button("Tonal", tonal: true); M3Button("Outlined", outlined: true); M3Button("Text") } }
-        section("component-floating-action-button", "Floating action button") { HStack { CircleButton("+").frame(width:40,height:40); CircleButton("+").frame(width:56,height:56); CircleButton("+").frame(width:80,height:80); M3Button("＋ New", tonal: true) } }
+        section("component-floating-action-button", "Floating action button") { HStack { CircleButton("+"); CircleButton("+"); CircleButton("+"); M3Button("＋ New", tonal: true) } }
         section("component-icon-buttons", "Icon buttons") { HStack { CircleButton("☆"); CircleButton("★",filled:true); CircleButton("⋯",tonal:true); CircleButton("✎",outlined:true) } }
         section("component-segmented-buttons", "Segmented buttons") { Picker("view", selection:$selectedSegment) { Text("List").tag(0);Text("Grid").tag(1);Text("Compact").tag(2) }.pickerStyle(.segmented) }
         section("component-badges", "Badges") { HStack { Text("Messages").overlay(alignment:.topTrailing){Circle().fill(.red).frame(width:8,height:8).offset(x:7,y:-5)}; Text("12").font(.caption2.bold()).padding(.horizontal,7).frame(height:24).background(.red).foregroundStyle(.white).clipShape(Capsule()) } }
@@ -103,7 +105,7 @@ struct CatalogView: View {
     }
 
     @ViewBuilder private func section<Content:View>(_ id:String,_ title:String,@ViewBuilder content:()->Content)->some View {
-        VStack(alignment:.leading,spacing:14){Text(title).font(.title3.weight(.semibold));Text(id).font(.caption).foregroundStyle(.secondary);content()}
+        VStack(alignment:.leading,spacing:14){Text(title).font(.title3.weight(.semibold));Text(id).font(.caption).foregroundStyle(onSurfaceVariant);content()}
             .padding(20).frame(maxWidth:.infinity,alignment:.leading).background(surfaceContainer.opacity(0.7)).clipShape(RoundedRectangle(cornerRadius:20)).accessibilityIdentifier(id)
     }
 }
@@ -171,12 +173,15 @@ private struct CircleButton: View {
     }
 
     var body: some View {
-        Button(label) {}
-            .frame(width: 48, height: 48)
-            .background(filled ? primary : tonal ? secondaryContainer : .clear)
-            .foregroundStyle(filled ? .white : primary)
-            .clipShape(Circle())
-            .overlay(Circle().stroke(outlined ? outline : .clear))
+        Button(action: {}) {
+            Text(label)
+                .frame(width: 48, height: 48)
+                .contentShape(Rectangle())
+        }
+        .background(filled ? primary : tonal ? secondaryContainer : .clear)
+        .foregroundStyle(filled ? .white : primary)
+        .clipShape(Circle())
+        .overlay(Circle().stroke(outlined ? outline : .clear))
     }
 }
 
