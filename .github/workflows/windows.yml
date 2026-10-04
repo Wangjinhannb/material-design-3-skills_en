@@ -1,0 +1,28 @@
+name: windows
+on:
+  push:
+    paths:
+      - 'examples/component-catalog/windows/**'
+      - 'examples/reference-app/windows/**'
+      - '.github/workflows/windows.yml'
+  pull_request:
+    paths:
+      - 'examples/component-catalog/windows/**'
+      - 'examples/reference-app/windows/**'
+      - '.github/workflows/windows.yml'
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: windows-latest
+    strategy:
+      matrix:
+        project:
+          - examples/component-catalog/windows/MD3Catalog.csproj
+          - examples/reference-app/windows/MD3Reference.csproj
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with: { dotnet-version: '9.0.x' }
+      - run: dotnet restore ${{ matrix.project }} -p:Platform=x64
+      - run: dotnet build ${{ matrix.project }} -c Release -p:Platform=x64 --no-restore
