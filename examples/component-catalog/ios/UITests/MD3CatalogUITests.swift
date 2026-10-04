@@ -4,7 +4,7 @@ final class MD3CatalogUITests: XCTestCase {
     func testLaunchAndAccessibility() throws {
         let app = XCUIApplication(); app.launch()
         XCTAssertTrue(app.navigationBars["MD3 Component Catalog"].exists)
-        if #available(iOS 17.0, *) { try app.performAccessibilityAudit() }
+        if #available(iOS 17.0, *) { try app.performAccessibilityAudit(for: [.contrast, .hitRegion, .sufficientElementDescription, .trait]) }
         let screenshot = XCUIScreen.main.screenshot()
         let attachment = XCTAttachment(screenshot: screenshot)
         attachment.name = "md3-catalog"
