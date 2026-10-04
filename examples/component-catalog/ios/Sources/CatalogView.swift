@@ -68,14 +68,202 @@ struct CatalogView: View {
     }
 }
 
-private struct M3Button: View { let text:String;var filled=false;var tonal=false;var outlined=false;var action:()->Void={};init(_ text:String,filled:Bool=false,tonal:Bool=false,outlined:Bool=false,action:@escaping()->Void={}){self.text=text;self.filled=filled;self.tonal=tonal;self.outlined=outlined;self.action=action} var body: some View { Button(text,action:action).buttonStyle(M3ButtonStyle(filled:filled,tonal:tonal,outlined:outlined)) } }
-private struct M3ButtonStyle:ButtonStyle{let filled:Bool;let tonal:Bool;let outlined:Bool;func makeBody(configuration:Configuration)->some View{configuration.label.font(.body.weight(.medium)).padding(.horizontal,20).frame(minHeight:40).background(filled ? primary : tonal ? secondaryContainer : Color.clear).foregroundStyle(filled ? Color.white : primary).clipShape(Capsule()).overlay(Capsule().stroke(outlined ? outline : .clear)).opacity(configuration.isPressed ? 0.84:1)}}
-private struct M3OutlineButtonStyle:ButtonStyle{func makeBody(configuration:Configuration)->some View{configuration.label.padding(.horizontal,20).frame(minHeight:40).foregroundStyle(primary).overlay(Capsule().stroke(outline))}}
-private struct CircleButton:View{let label:String;var filled=false;var tonal=false;var outlined=false;init(_ label:String,filled:Bool=false,tonal:Bool=false,outlined:Bool=false){self.label=label;self.filled=filled;self.tonal=tonal;self.outlined=outlined}var body:some View{Button(label){}.frame(width:48,height:48).background(filled ? primary : tonal ? secondaryContainer : .clear).foregroundStyle(filled ? .white : primary).clipShape(Circle()).overlay(Circle().stroke(outlined ? outline : .clear))}}
-private struct M3Card:View{let title:String;var outlined=false;var elevated=false;init(_ title:String,outlined:Bool=false,elevated:Bool=false){self.title=title;self.outlined=outlined;self.elevated=elevated}var body:some View{VStack(alignment:.leading){Text(title).font(.headline);Text("Related content")}.padding().frame(width:145,height:100,alignment:.leading).background(outlined ? Color.clear : surfaceContainer).clipShape(RoundedRectangle(cornerRadius:12)).overlay(RoundedRectangle(cornerRadius:12).stroke(outlined ? outline : .clear)).shadow(color:.black.opacity(elevated ? 0.15:0),radius:3,y:1)}}
-private struct ListRow:View{let title:String;var subtitle:String?;init(_ title:String,subtitle:String?=nil){self.title=title;self.subtitle=subtitle}var body:some View{HStack{Circle().fill(secondaryContainer).frame(width:40,height:40).overlay(Text(String(title.prefix(1))));VStack(alignment:.leading){Text(title);if let subtitle{Text(subtitle).font(.caption).foregroundStyle(.secondary)}};Spacer()}.padding(.vertical,8)}}
-private struct NavItem:View{let icon:String;let title:String;var selected=false;init(_ icon:String,_ title:String,selected:Bool=false){self.icon=icon;self.title=title;self.selected=selected}var body:some View{VStack(spacing:4){Text(icon).padding(.horizontal,14).padding(.vertical,4).background(selected ? secondaryContainer:.clear).clipShape(Capsule());Text(title).font(.caption)}}}
-private struct DrawerItem:View{let title:String;var selected=false;init(_ title:String,selected:Bool=false){self.title=title;self.selected=selected}var body:some View{Text(title).padding(.horizontal,16).frame(maxWidth:.infinity,minHeight:48,alignment:.leading).background(selected ? secondaryContainer:.clear).clipShape(Capsule())}}
-private struct Chip:View{let title:String;var selected=false;init(_ title:String,selected:Bool=false){self.title=title;self.selected=selected}var body:some View{Text(title).font(.callout).padding(.horizontal,12).frame(height:32).background(selected ? secondaryContainer:.clear).overlay(RoundedRectangle(cornerRadius:8).stroke(selected ? .clear:outline))}}
-private struct CheckboxToggleStyle:ToggleStyle{func makeBody(configuration:Configuration)->some View{Button{configuration.isOn.toggle()}{HStack{Image(systemName:configuration.isOn ? "checkmark.square.fill":"square").foregroundStyle(primary);configuration.label}}}}
-private extension ToggleStyle where Self == CheckboxToggleStyle { static var checkboxLike:CheckboxToggleStyle{CheckboxToggleStyle()} }
+private struct M3Button: View {
+    let text: String
+    var filled = false
+    var tonal = false
+    var outlined = false
+    var action: () -> Void = {}
+
+    init(_ text: String, filled: Bool = false, tonal: Bool = false, outlined: Bool = false, action: @escaping () -> Void = {}) {
+        self.text = text
+        self.filled = filled
+        self.tonal = tonal
+        self.outlined = outlined
+        self.action = action
+    }
+
+    var body: some View {
+        Button(text, action: action)
+            .buttonStyle(M3ButtonStyle(filled: filled, tonal: tonal, outlined: outlined))
+    }
+}
+
+private struct M3ButtonStyle: ButtonStyle {
+    let filled: Bool
+    let tonal: Bool
+    let outlined: Bool
+
+    func makeBody(configuration: Configuration) -> some View {
+        configuration.label
+            .font(.body.weight(.medium))
+            .padding(.horizontal, 20)
+            .frame(minHeight: 40)
+            .background(filled ? primary : tonal ? secondaryContainer : Color.clear)
+            .foregroundStyle(filled ? Color.white : primary)
+            .clipShape(Capsule())
+            .overlay(Capsule().stroke(outlined ? outline : .clear))
+            .opacity(configuration.isPressed ? 0.84 : 1)
+    }
+}
+
+private struct M3OutlineButtonStyle: ButtonStyle {
+    func makeBody(configuration: Configuration) -> some View {
+        configuration.label
+            .padding(.horizontal, 20)
+            .frame(minHeight: 40)
+            .foregroundStyle(primary)
+            .overlay(Capsule().stroke(outline))
+    }
+}
+
+private struct CircleButton: View {
+    let label: String
+    var filled = false
+    var tonal = false
+    var outlined = false
+
+    init(_ label: String, filled: Bool = false, tonal: Bool = false, outlined: Bool = false) {
+        self.label = label
+        self.filled = filled
+        self.tonal = tonal
+        self.outlined = outlined
+    }
+
+    var body: some View {
+        Button(label) {}
+            .frame(width: 48, height: 48)
+            .background(filled ? primary : tonal ? secondaryContainer : .clear)
+            .foregroundStyle(filled ? .white : primary)
+            .clipShape(Circle())
+            .overlay(Circle().stroke(outlined ? outline : .clear))
+    }
+}
+
+private struct M3Card: View {
+    let title: String
+    var outlined = false
+    var elevated = false
+
+    init(_ title: String, outlined: Bool = false, elevated: Bool = false) {
+        self.title = title
+        self.outlined = outlined
+        self.elevated = elevated
+    }
+
+    var body: some View {
+        VStack(alignment: .leading) {
+            Text(title).font(.headline)
+            Text("Related content")
+        }
+        .padding()
+        .frame(width: 145, height: 100, alignment: .leading)
+        .background(outlined ? Color.clear : surfaceContainer)
+        .clipShape(RoundedRectangle(cornerRadius: 12))
+        .overlay(RoundedRectangle(cornerRadius: 12).stroke(outlined ? outline : .clear))
+        .shadow(color: .black.opacity(elevated ? 0.15 : 0), radius: 3, y: 1)
+    }
+}
+
+private struct ListRow: View {
+    let title: String
+    var subtitle: String?
+
+    init(_ title: String, subtitle: String? = nil) {
+        self.title = title
+        self.subtitle = subtitle
+    }
+
+    var body: some View {
+        HStack {
+            Circle()
+                .fill(secondaryContainer)
+                .frame(width: 40, height: 40)
+                .overlay(Text(String(title.prefix(1))))
+            VStack(alignment: .leading) {
+                Text(title)
+                if let subtitle {
+                    Text(subtitle).font(.caption).foregroundStyle(.secondary)
+                }
+            }
+            Spacer()
+        }
+        .padding(.vertical, 8)
+    }
+}
+
+private struct NavItem: View {
+    let icon: String
+    let title: String
+    var selected = false
+
+    init(_ icon: String, _ title: String, selected: Bool = false) {
+        self.icon = icon
+        self.title = title
+        self.selected = selected
+    }
+
+    var body: some View {
+        VStack(spacing: 4) {
+            Text(icon)
+                .padding(.horizontal, 14)
+                .padding(.vertical, 4)
+                .background(selected ? secondaryContainer : .clear)
+                .clipShape(Capsule())
+            Text(title).font(.caption)
+        }
+    }
+}
+
+private struct DrawerItem: View {
+    let title: String
+    var selected = false
+
+    init(_ title: String, selected: Bool = false) {
+        self.title = title
+        self.selected = selected
+    }
+
+    var body: some View {
+        Text(title)
+            .padding(.horizontal, 16)
+            .frame(maxWidth: .infinity, minHeight: 48, alignment: .leading)
+            .background(selected ? secondaryContainer : .clear)
+            .clipShape(Capsule())
+    }
+}
+
+private struct Chip: View {
+    let title: String
+    var selected = false
+
+    init(_ title: String, selected: Bool = false) {
+        self.title = title
+        self.selected = selected
+    }
+
+    var body: some View {
+        Text(title)
+            .font(.callout)
+            .padding(.horizontal, 12)
+            .frame(height: 32)
+            .background(selected ? secondaryContainer : .clear)
+            .overlay(RoundedRectangle(cornerRadius: 8).stroke(selected ? .clear : outline))
+    }
+}
+
+private struct CheckboxToggleStyle: ToggleStyle {
+    func makeBody(configuration: Configuration) -> some View {
+        Button { configuration.isOn.toggle() } label: {
+            HStack {
+                Image(systemName: configuration.isOn ? "checkmark.square.fill" : "square")
+                    .foregroundStyle(primary)
+                configuration.label
+            }
+        }
+    }
+}
+
+private extension ToggleStyle where Self == CheckboxToggleStyle {
+    static var checkboxLike: CheckboxToggleStyle { CheckboxToggleStyle() }
+}
