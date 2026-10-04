@@ -1,19 +1,19 @@
 ﻿# iOS / iPadOS — Swift / SwiftUI
 
-SwiftUI supplies Apple platform behavior and accessibility primitives. The repository applies Classic M3 tokens, component styling, and state behavior.
+SwiftUI provides platform behavior and accessibility primitives. Apply Classic M3 tokens and component styling on top.
 
 ## Implementation
 
-Build M3 components from SwiftUI primitives while preserving native gestures, safe areas, text input, VoiceOver, and system sheet/navigation behavior.
+Use SwiftUI primitives. Keep native gestures, safe areas, text input, VoiceOver, sheets, and navigation.
 
-## Theme and tokens
+## Theme
 
-Expose semantic M3 colors, type roles, shapes, and elevation through Swift values/environment or repository theme objects. Respect system appearance and Dynamic Type. Consume generated Swift token values. Keep semantic roles separate from asset/color literals used by platform integration code.
+Map generated Swift tokens to semantic colors, type, shapes, and elevation. Support system appearance and Dynamic Type.
 
-## Input and accessibility
+## Accessibility
 
-Support touch, hardware keyboard, pointer, focus, and platform gestures. Preserve native dismissal and back/navigation expectations. Use SwiftUI accessibility modifiers, VoiceOver labels/values/traits, Dynamic Type, Reduce Motion, and sufficient target sizes.
+Support touch, keyboard, pointer, focus, VoiceOver, Dynamic Type, Reduce Motion, and minimum target sizes.
 
 ## Verification
 
-Run Xcode build/test and UI accessibility audits on macOS. Record simulator/device and Xcode versions for runtime claims.
+Run Xcode build/test and UI accessibility audits. Record Xcode and simulator/device versions.

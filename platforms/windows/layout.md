@@ -1,5 +1,3 @@
 ﻿# Layout
 
-Use responsive XAML layout, effective pixels/DPI scaling, window resize events, and desktop-appropriate density. Reflow instead of stretching a mobile layout.
-
-Layout changes preserve information hierarchy, reading order, focus order, and task completion.
+Use responsive XAML layout, effective-pixel/DPI scaling, and resize events. Reflow content as the window changes.

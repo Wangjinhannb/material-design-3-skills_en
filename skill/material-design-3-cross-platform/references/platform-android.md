@@ -1,19 +1,15 @@
 ﻿# Android — Kotlin / Jetpack Compose
 
-Compose Material 3 is the primary official implementation reference. Current packages also expose Expressive APIs, so repository code stays within the Classic baseline.
+Use Compose Material 3 APIs that fit the Classic baseline. Filter out Expressive-only APIs.
 
-## Implementation
+## Theme
 
-Prefer baseline-compatible Material3 composables. Add repository-owned wrappers only when the platform API does not express the required Classic behavior or token mapping.
+Map tokens to `ColorScheme`, `Typography`, `Shapes`, and dimensions. Dynamic color needs a deterministic fallback.
 
-## Theme and tokens
+## Accessibility
 
-Use `MaterialTheme` with generated or mapped `ColorScheme`, `Typography`, and `Shapes`. Dynamic color may be enabled where supported, with deterministic fallback. Map repository roles to Compose theme objects and dimension constants. Avoid duplicating semantic values in individual composables.
-
-## Input and accessibility
-
-Support touch, keyboard, mouse/trackpad, stylus, and focus on large-screen/desktop-capable devices. Keep ripple/state behavior aligned with component semantics. Use Compose semantics, content descriptions where needed, meaningful traversal order, touch-target sizing, text scaling, and TalkBack verification.
+Support touch, keyboard, mouse/trackpad, stylus, focus, Compose semantics, text scaling, touch targets, and TalkBack.
 
 ## Verification
 
-Run Gradle assemble, lint, unit/UI tests, accessibility checks, and emulator screenshots when the configured CI environment supports them.
+Run assemble, lint, tests, accessibility checks, and emulator screenshots when configured.

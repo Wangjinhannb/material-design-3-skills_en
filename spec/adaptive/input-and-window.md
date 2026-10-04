@@ -4,4 +4,4 @@ Support the input methods available on the target platform: touch, mouse, trackp
 
 Desktop and large-screen layouts provide visible focus, hover behavior where useful, resizable-window handling, and keyboard traversal. Touch targets remain usable without making pointer layouts unnecessarily sparse.
 
-Window-state changes trigger layout recomputation rather than proportional canvas scaling.
+Window-state changes trigger layout recomputation. Fixed-canvas scaling is unsupported.

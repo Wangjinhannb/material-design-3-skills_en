@@ -1,6 +1,6 @@
 ﻿# Bottom app bar (`bottom-app-bar`)
 
-Provenance: `official-md3` (design semantics) + `platform-adaptation` (implementation).
+Provenance: `official-md3` + `platform-adaptation`.
 
 ## Purpose
 
@@ -18,33 +18,14 @@ Place primary actions at the bottom of a mobile layout, optionally alongside a F
 - `pressed`
 - `disabled`
 
-## Token groups
+## Tokens
 
 `color`, `typography`, `shape`, `state`
-
-## Interaction
-
-Keep visual state, input behavior, and semantic state synchronized. When a target platform has no direct component equivalent, compose platform primitives while preserving the component purpose and interaction semantics.
 
 ## Accessibility
 
 Every action requires a clear name. Avoid system gesture areas.
 
-## Adaptive behavior
-
-Adapt to the current window and input method while preserving readability and operability.
-
-## Platform implementation
-
-Check `platforms/<platform>/components.md` and `metadata/support-matrix.yaml`. A same-named native control still requires review of M3 visual roles, states, and semantics.
-
-## Common issues
-
-- Use semantic color roles rather than arbitrary local colors.
-- Cover applicable focus, disabled, selected, and error states.
-- Review platform-default styling before calling an implementation M3-aligned.
-- Keep Expressive-only variants outside this baseline.
-
-## Official source
+## Source
 
 - https://m3.material.io/components/bottom-app-bar/overview

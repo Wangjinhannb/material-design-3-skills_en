@@ -1,5 +1,5 @@
 ﻿# Governance
 
-The repository owner maintains the baseline and release branches. Changes to baseline scope, token schema, source-of-truth rules, or platform support policy require an ADR.
+The repository owner maintains the baseline and release branches.
 
-Routine fixes may be merged after automated checks pass. Normative changes also require source review and an explicit baseline-impact assessment.
+An ADR is required for baseline scope, token schema, source-of-truth rules, or platform-support policy changes. Normative changes also require source review and a baseline-impact note.

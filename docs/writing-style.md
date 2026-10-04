@@ -1,14 +1,13 @@
 ﻿# Writing Style
 
-Use product and engineering documentation style.
+Use product-documentation prose.
 
-- Put the decision, behavior, or constraint first.
-- Keep one topic per paragraph.
-- Prefer concrete nouns and verifiable status labels.
-- Remove promotional language, rhetorical questions, and self-evaluation.
-- Avoid contrast formulas such as “not X, but Y” when a direct statement is clearer.
-- Avoid filler such as “simply put,” “in essence,” “it is worth noting,” and similar setup phrases.
-- Use explicit verification labels such as `implemented`, `build-verified`, `runtime-verified`, or `unverified`.
-- Use MUST, MUST NOT, SHOULD, SHOULD NOT, and MAY only in normative or AI-execution guidance.
+- Put the rule, command, or status first.
+- Keep one subject per paragraph.
+- Use concrete nouns and testable states.
+- Delete setup phrases, sales language, rhetorical contrasts, and self-commentary.
+- Keep explanations only when they change implementation or verification.
+- Use `implemented`, `build-verified`, `runtime-verified`, and similar status labels precisely.
+- Keep generated pages shorter than their canonical metadata and sources.
 
-Technical limitations should state the missing environment or evidence directly.
+The style validator rejects recurring filler and long prose paragraphs.

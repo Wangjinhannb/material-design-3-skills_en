@@ -1,16 +1,5 @@
 ﻿# Test Report
 
-Repository automation covers:
+Repository checks cover metadata/schema, component IDs, Classic/Expressive scope, tokens, generators, support matrix, Skill eval cases, catalog coverage, documentation style, and generated-file determinism.
 
-- metadata and schema checks;
-- component count and stable IDs;
-- Classic M3 / Expressive boundary checks;
-- token structure and generation;
-- support-matrix generation;
-- Skill evaluation cases;
-- 31-component catalog coverage;
-- Reference App section coverage;
-- documentation style and English-only text checks;
-- generated-output determinism.
-
-Platform-specific results are recorded by GitHub Actions. Runtime status should be read from the latest successful workflow run and `PROJECT_STATUS.md`.
+Platform results are recorded by GitHub Actions.

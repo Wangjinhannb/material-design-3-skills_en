@@ -8,4 +8,4 @@ Color tokens use the stable DTCG 2025.10 core structure where practical. Other t
 
 - Canonical values live under `tokens/source/`.
 - Platform token files are generated.
-- Repository-specific tokens are labeled as repository conventions rather than official Material tokens.
+- Repository-specific tokens are labeled `repo-convention`.

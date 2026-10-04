@@ -17,7 +17,7 @@ Read `references/source-policy.md` before version-sensitive or normative work.
 
 ## Modes
 
-Classify the task as one of:
+Use one mode:
 
 - **Build** — create a new interface or component.
 - **Audit** — inspect an existing interface or project.
@@ -34,7 +34,7 @@ Classify the task as one of:
 - Linux / GTK → `references/platform-linux-gtk.md`
 - Linux / Qt / QML → `references/platform-linux-qt.md`
 
-Infer the platform from project files when possible. Ask only when platform choice materially changes the implementation and cannot be inferred.
+Infer the platform from project files. Ask only when it cannot be inferred and changes the implementation.
 
 ## Core references
 
@@ -84,7 +84,7 @@ For each finding, include location, rule class, problem, impact, recommended fix
 
 ## Refactor
 
-Preserve business logic and information architecture first. Establish a shared token/theme layer, then replace component styling and state behavior. Avoid blanket corner-radius, color-swap, or shadow-only conversions.
+Preserve business logic and information architecture. Establish the token/theme layer, then replace component styling and state behavior. Reject corner-radius, color-swap, and shadow-only conversions.
 
 ## Explain
 
@@ -111,4 +111,4 @@ When the project filesystem is available:
 python scripts/static_audit.py <project-path>
 ```
 
-The script catches a small set of high-value static risks and does not replace a full M3 audit.
+The script checks selected static risks. Run the full audit separately.

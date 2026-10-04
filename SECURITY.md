@@ -1,7 +1,7 @@
 ﻿# Security Policy
 
-Do not report credentials, tokens, private repository URLs, or user data in public issues.
+Do not post credentials, tokens, private repository URLs, or user data in public issues.
 
-For dependency or workflow vulnerabilities, include the affected file, version, impact, and a minimal reproduction when possible. Avoid posting active secrets or exploit material that would expose third parties.
+For dependency or workflow vulnerabilities, include the affected file, version, impact, and a minimal reproduction. Remove active secrets and third-party exploit data.
 
-The repository does not intentionally collect runtime user data.
+No runtime user data is intentionally collected.
