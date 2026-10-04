@@ -7,7 +7,7 @@ plugins {
 
 android {
     namespace = "org.example.md3catalog"
-    compileSdk = 36
+    compileSdk = 37
     defaultConfig {
         applicationId = "org.example.md3catalog"
         minSdk = 23
