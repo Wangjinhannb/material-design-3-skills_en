@@ -39,7 +39,7 @@ final class MD3CatalogUITests: XCTestCase {
 
         XCTAssertTrue(app.navigationBars["Component Catalog"].waitForExistence(timeout: 10))
 
-        let badges = app.descendants(matching: .any)["component-badges"]
+        let badges = app.descendants(matching: .any).matching(identifier: "component-badges").firstMatch
         XCTAssertTrue(badges.waitForExistence(timeout: 10))
         XCTAssertFalse(badges.frame.isEmpty)
 
