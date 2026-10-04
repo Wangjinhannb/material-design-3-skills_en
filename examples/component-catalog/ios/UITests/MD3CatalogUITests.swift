@@ -1,4 +1,5 @@
 import XCTest
+@MainActor
 final class MD3CatalogUITests: XCTestCase {
     func testLaunchAndAccessibility() throws {
         let app = XCUIApplication(); app.launch()
