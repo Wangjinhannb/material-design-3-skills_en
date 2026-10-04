@@ -20,7 +20,7 @@ jobs:
   gtk:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - run: sudo apt-get update && sudo apt-get install -y libgtk-4-dev xvfb imagemagick
       - run: cmake -S examples/component-catalog/linux-gtk -B build/gtk-catalog && cmake --build build/gtk-catalog
       - run: xvfb-run -a ctest --test-dir build/gtk-catalog --output-on-failure
@@ -34,7 +34,7 @@ jobs:
   qt:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - run: sudo apt-get update && sudo apt-get install -y qt6-base-dev qt6-declarative-dev xvfb imagemagick
       - run: cmake -S examples/component-catalog/linux-qt -B build/qt-catalog && cmake --build build/qt-catalog
       - run: xvfb-run -a build/qt-catalog/md3-qt-catalog --smoke
