@@ -1,5 +1,5 @@
 ﻿# Linux — GTK 4
 
-GTK and libadwaita provide Linux/GNOME platform behavior. Adwaita styling is separate from Material 3, so the repository applies its own Classic M3 visual layer.
+Use GTK for platform behavior and apply Classic M3 through CSS, sizing, states, and component structure.
 
 Status: `metadata/platforms.yaml`, `PROJECT_STATUS.md`.
