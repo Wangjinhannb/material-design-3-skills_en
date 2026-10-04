@@ -1,5 +1,5 @@
 ﻿# Windows — C# / WinUI 3
 
-WinUI 3 defaults to Fluent. The repository maps Classic M3 semantics through ResourceDictionary, styles, templates, and control behavior.
+Use WinUI 3 for platform behavior and map Classic M3 through resources, styles, and templates.
 
 Status: `metadata/platforms.yaml`, `PROJECT_STATUS.md`.
