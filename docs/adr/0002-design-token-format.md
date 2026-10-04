@@ -2,10 +2,10 @@
 
 ## Decision
 
-Color tokens use the stable DTCG 2025.10 core structure where practical. Other token categories use the repository-owned `repo-md3-token-v1` schema until equivalent support is adopted.
+Color tokens use DTCG 2025.10 core structures where practical. Other token groups use `repo-md3-token-v1`.
 
 ## Consequences
 
-- Canonical values live under `tokens/source/`.
+- Canonical values live in `tokens/source/`.
 - Platform token files are generated.
-- Repository-specific tokens are labeled `repo-convention`.
+- Repository-specific tokens use `repo-convention`.
