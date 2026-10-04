@@ -1,5 +1,3 @@
 ﻿# Architecture
 
-C#, XAML, WinUI 3, and Windows App SDK.
-
-WinUI 3 defaults to Fluent. The repository maps Classic M3 semantics through ResourceDictionary, styles, templates, and control behavior.
+C# / XAML / WinUI 3. Use WinUI 3 for platform behavior and map Classic M3 through resources, styles, and templates.
