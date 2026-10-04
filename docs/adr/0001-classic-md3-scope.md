@@ -2,10 +2,10 @@
 
 ## Decision
 
-The repository baseline is Classic Material Design 3 with a historical design cutoff of 2024-12-31. Current platform APIs may be used to implement that baseline. Expressive-only design rules do not enter the baseline automatically.
+Baseline: Classic Material Design 3, design cutoff `2024-12-31`. Current platform APIs may implement that baseline. Expressive-only design rules are excluded.
 
 ## Consequences
 
-- Current `androidx.compose.material3` APIs require baseline review before use.
-- Material 3 Expressive components, motion schemes, or shape systems remain out of scope unless a future baseline explicitly adopts them.
-- Ambiguous current documentation is marked unverified.
+- Review current `androidx.compose.material3` APIs before use.
+- Expressive components, motion schemes, and shape systems stay outside the baseline.
+- Mark ambiguous current guidance as unverified.
