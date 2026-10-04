@@ -1,5 +1,3 @@
 ﻿# Architecture
 
-ArkTS, ArkUI, and DevEco Studio project structure.
-
-ArkUI supplies platform primitives and system behavior. The repository supplies the Classic M3 visual, token, and component mapping layer.
+ArkTS / ArkUI. Use ArkUI for platform behavior and map Classic M3 through tokens and component styling.
