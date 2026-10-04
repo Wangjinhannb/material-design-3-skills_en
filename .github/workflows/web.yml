@@ -1,0 +1,43 @@
+name: web
+on:
+  push:
+    paths:
+      - 'examples/component-catalog/web/**'
+      - 'examples/reference-app/web/**'
+      - 'tokens/generated/web/**'
+      - '.github/workflows/web.yml'
+  pull_request:
+    paths:
+      - 'examples/component-catalog/web/**'
+      - 'examples/reference-app/web/**'
+      - 'tokens/generated/web/**'
+      - '.github/workflows/web.yml'
+permissions:
+  contents: read
+jobs:
+  catalog:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: examples/component-catalog/web
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: '22' }
+      - run: npm install
+      - run: npx playwright install --with-deps chromium
+      - run: npx playwright test tests/catalog.spec.js tests/accessibility.spec.js --project=desktop
+      - name: Visual regression
+        shell: bash
+        run: |
+          if find tests -type d -name '*-snapshots' | grep -q .; then
+            npx playwright test tests/visual.spec.js
+          else
+            echo 'Visual baseline has not been committed yet.'
+          fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: web-playwright-report
+          path: examples/component-catalog/web/test-results
+          if-no-files-found: ignore
