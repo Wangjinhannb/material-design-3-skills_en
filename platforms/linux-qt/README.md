@@ -1,5 +1,5 @@
 ﻿# Linux — Qt 6 / QML
 
-Qt Material Style is a useful reference but is not treated as complete current Classic M3 conformance. The repository applies its own token and component review.
+Use Qt Quick Controls for platform behavior and apply the Classic M3 token/component layer.
 
 Status: `metadata/platforms.yaml`, `PROJECT_STATUS.md`.
