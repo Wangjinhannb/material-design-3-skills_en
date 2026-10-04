@@ -1,5 +1,3 @@
 ﻿# Architecture
 
-Semantic HTML, CSS custom properties, and JavaScript. Framework adapters may reuse the same token and component layer.
-
-The repository uses a custom Classic M3 layer. `@material/web` is optional and is not treated as a complete current-M3 dependency because the upstream project is in maintenance mode.
+HTML / CSS / JavaScript. Use semantic HTML, CSS custom properties, and the Classic M3 token/component layer.
