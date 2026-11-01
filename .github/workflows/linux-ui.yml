@@ -37,7 +37,7 @@ jobs:
         run: |
           set -euo pipefail
           xvfb-run -a bash -c 'build/gtk-catalog/md3-gtk-catalog & pid=$!; sleep 2; import -window root gtk-catalog.png; kill $pid || true'
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: gtk-catalog-screenshot
           path: gtk-catalog.png
@@ -59,7 +59,7 @@ jobs:
         run: |
           set -euo pipefail
           xvfb-run -a bash -c 'build/qt-catalog/md3-qt-catalog & pid=$!; sleep 2; import -window root qt-catalog.png; kill $pid || true'
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: qt-catalog-screenshot
           path: qt-catalog.png
